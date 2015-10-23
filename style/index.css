@@ -1,0 +1,41 @@
+
+h1 {
+	margin-top:25px;
+} 
+
+/* Define table format. */
+table {
+	width:800px;
+	height:720px;
+	text-align:center;
+	margin-top:25px;
+	border: 10px groove #eebbee;
+}
+
+tr {
+	background-color: #cfc3e9;
+	background-color: rgba(207,195,233,0.7);
+	font-weight: bold;
+	font-size: 20px;
+}
+
+td {
+	width:50%;
+	border: 5px outset #f6bee1;
+	cursor: pointer;
+}
+
+/* Define table cell behaviour on hover or click. */
+td:hover{
+	border: 5px inset #f6bee1;
+    text-decoration: underline;
+}
+
+td:active{
+	border: 5px inset #f6bee1;
+}
+
+/* Define paragraph. */
+p {
+	font-weight: bold;
+}

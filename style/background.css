@@ -1,0 +1,13 @@
+
+/* Body selector. */
+body {
+	/* Define master font. */
+	font-family: Arial, Verdana, sans-serif;
+	font-style: normal;
+	text-align: center;
+	/* Define background image. */
+    background-image: url("bg-body.jpg");
+    background-color: #cfe7e7;
+	background-size: cover;
+    background-repeat: no-repeat;
+} 
