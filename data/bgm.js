@@ -1,4 +1,6 @@
 var statics = [
+
+	//Home port BGM theme
 	"kcs/resources/bgm_p/103v.swf",
 	"kcs/resources/bgm_p/104a.swf",
 	"kcs/resources/bgm_p/105h.swf",
@@ -21,6 +23,8 @@ var statics = [
 	"kcs/resources/bgm_p/227f.swf",
 	"kcs/resources/bgm_p/903y.swf",
 	"kcs/resources/bgm_p/904w.swf",
+	
+	//Battle BGM theme
 	"kcs/resources/swf/sound_b_bgm_1.swf?version=2.0.6",
 	"kcs/resources/swf/sound_b_bgm_2.swf?version=2.0.6",
 	"kcs/resources/swf/sound_b_bgm_3.swf?version=2.0.6",
