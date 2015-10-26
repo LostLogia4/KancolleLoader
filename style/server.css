@@ -1,0 +1,54 @@
+#progress {
+	width:300px;
+	height:85px;
+	margin:30px auto 20px;
+	background:rgba(255,255,255,0.5);
+	border:1px outset #ccc;
+}
+
+#progress-title {
+	width:300px;
+	height:30px;
+	line-height:30px;
+	font-weight:bold;
+	font-size:18px;
+	margin:5px 0px 5px 0px;
+}
+
+#progress-box {
+	width:280px;
+	height:10px;
+	background:#555;
+	border:1px solid #333;
+	margin:0px auto 5px;
+}
+	#progress-bar {
+		width:0px;
+		height:10px;
+		background:#ace;
+	}
+
+#progress-text {
+	width:300px;
+	height:20px;
+	line-height:20px;
+	font-size:14px;
+	margin:0px 0px 10px 0px;
+}
+
+#embeds {
+	/*display:none;*/
+}
+
+/*#console {
+	width:600px;
+	height:400px;
+	margin:0px auto;
+	border:1px inset #ccc;
+	background:#000;
+	font-family:monospace;
+	color:#fff;
+	text-align:left;
+	padding:5px 8px;
+	white-space: pre;
+}*/
