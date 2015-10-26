@@ -13,8 +13,7 @@
 		});
 		
 		$.each(shipgraph, function(index, ShipGraph){
-			// console.log( ShipGraph.api_filename + "?version=" + ShipGraph.api_version);
-			// $("#embeds").append("<embed src=\"http://"+ServerIP+"/"+StaticAsset+"\">");
+			$("#embeds").append("<embed src=\"http://"+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf\">");
 		});
 		
 	});
