@@ -4,13 +4,13 @@
 	var ServerIndex = ServerNum - 1;
 	var ServerData = servers[ServerIndex];
 	var ServerIP = ServerData.ip;
-	var CurrentMaxEquip = 151;
+	var CurrentMaxEquip = 151;	//considered for relocation to data directory
 	
 	$(document).on("ready", function(){
 		$("#progress-title").text(ServerData.name);
 		$("#progress-text").text("Loading...");
 		
-		$.each(bgm, function(bgm, StaticAsset){
+		$.each(bgm, function(index, StaticAsset){
 			$("#embeds").append("<embed width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"+ServerIP+"/"+StaticAsset+"\" type=\"application/x-shockwave-flash\">");
 		});
 		
@@ -18,11 +18,11 @@
 			$("#embeds").append("<embed width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"+ServerIP+"/"+StaticAsset+"\" type=\"application/x-shockwave-flash\">");
 		});
 		
-		for (EquipIDNum = 001; EquipIDNum <= CurrentMaxEquip; EquipIDNum++) {
+		for (EquipIDNum = 1; EquipIDNum <= CurrentMaxEquip; EquipIDNum++) {
 		
 			//Zero paddings
 			if (EquipIDNum < 100) EquipIDNum = "0" + EquipIDNum;
-			if (EquipIDNum < 10) EquipIDNum = "0" + EquipIDNum;
+			if (EquipIDNum <  10) EquipIDNum = "0" + EquipIDNum;
 		
 			//Image prefetch embeds
 			$("#embeds").append("<img width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"+ServerIP+"/kcs/resources/image/slotitem/card/"+EquipIDNum+".png\">");
@@ -33,6 +33,7 @@
 		}
 		
 		/*
+		//
 		//Currently in beta phase
 		$.each(shipgraph, function(index, ShipGraph){
 			$("#embeds").append("<embed width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf\" type=\"application/x-shockwave-flash\">");

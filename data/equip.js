@@ -1,0 +1,1 @@
+var CurrentMaxEquip = 151;
