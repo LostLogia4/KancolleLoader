@@ -1,4 +1,4 @@
-var statics = [
+var bgm = [
 
 	//Home port BGM theme
 	"kcs/resources/bgm_p/103v.swf",
