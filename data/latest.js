@@ -2,17 +2,17 @@ var latest = [
 
 	//insert new stuffs here
 	/*
-	"/kcs/resources/swf/ships/zuikaku-kai_ni.swf"
-	"/kcs/resources/swf/ships/zuikaku-kai_ni_A.swf"
+	"/kcs/resources/swf/ships/zuikaku-kai_ni.swf",
+	"/kcs/resources/swf/ships/zuikaku-kai_ni_A.swf",
 	*/
-
 //	last resource has no comma at its end.
 //	"/kcs/resources/swf/map/31_06.swf?version=1.0.0"
 
+	"/kcs/resources/swf/ships/wvnchfzhekfo.swf"
 
 ];
 
-	/*Prototype for dedicated loader.
+	//*Prototype for dedicated loader.
 	$(document).on("ready", function(){
 		
 		//Load the data values
@@ -25,5 +25,5 @@ var latest = [
 		$("#embeds").empty();
 			
 	});
-	*/
+	//*/
 	
