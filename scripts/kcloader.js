@@ -1,10 +1,10 @@
+//A global variable for parsing hashed suffix and assign the appropriate server.
+var ServerNum = parseInt( window.location.hash.substring(1) ,10) || 1;
+var ServerIndex = ServerNum - 1;
+var ServerData = servers[ServerIndex];
+var ServerIP = ServerData.ip;
+
 (function(){
-	
-	//List of variables
-	var ServerNum = parseInt( window.location.hash.substring(1) ,10) || 1;
-	var ServerIndex = ServerNum - 1;
-	var ServerData = servers[ServerIndex];
-	var ServerIP = ServerData.ip;
 	
 	$(document).on("ready", function(){
 		
@@ -21,7 +21,7 @@
 			$("#embeds").append("<embed width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"+ServerIP+"/"+StaticAsset+"\" type=\"application/x-shockwave-flash\">");
 		});
 		
-		//for loop loading equipment icons
+		//load equipment icons via for loops
 		for (EquipIDNum = 1; EquipIDNum <= CurrentMaxEquip; EquipIDNum++) {
 		
 			//Zero paddings
