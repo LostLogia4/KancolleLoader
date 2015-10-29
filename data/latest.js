@@ -22,7 +22,7 @@ var latest = [
 		
 		//Flush or remove the old embeds
 		$("#embeds").detach();
-		$("#embeds").empty();
+		//$("#embeds").empty();
 			
 	});
 	//*/
