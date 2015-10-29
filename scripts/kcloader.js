@@ -1,22 +1,27 @@
 (function(){
 	
+	//List of variables
 	var ServerNum = parseInt( window.location.hash.substring(1) ,10) || 1;
 	var ServerIndex = ServerNum - 1;
 	var ServerData = servers[ServerIndex];
 	var ServerIP = ServerData.ip;
 	
 	$(document).on("ready", function(){
-		$("#progress-title").text(ServerData.name);
-		$("#progress-text").text("Loading...");
 		
+		$("#progress-title").text(ServerData.name);     //display the server name
+		$("#progress-text").text("Loading...");         //replace initializing with loading
+		
+		//load static info from bgm.js
 		$.each(bgm, function(index, StaticAsset){
 			$("#embeds").append("<embed width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"+ServerIP+"/"+StaticAsset+"\" type=\"application/x-shockwave-flash\">");
 		});
 		
+		//load static info from maps.js
 		$.each(worldmaps, function(index, StaticAsset){
 			$("#embeds").append("<embed width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"+ServerIP+"/"+StaticAsset+"\" type=\"application/x-shockwave-flash\">");
 		});
 		
+		//for loop loading equipment icons
 		for (EquipIDNum = 1; EquipIDNum <= CurrentMaxEquip; EquipIDNum++) {
 		
 			//Zero paddings
@@ -32,6 +37,7 @@
 		}
 		
 		/*
+		//parse api_start2 master data to generate kanmusu CGs
 		//Operational, but is currently bugged by flash plugin crash
 		$.each(shipgraph, function(index, ShipGraph){
 			$("#embeds").append("<embed width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf\" type=\"application/x-shockwave-flash\">");
