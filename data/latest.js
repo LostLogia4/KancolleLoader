@@ -20,10 +20,6 @@ var latest = [
 			$("#embeds").append("<embed width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"+ServerIP+"/"+StaticAsset+"\" type=\"application/x-shockwave-flash\">");
 		});
 		
-		//Flush or remove the old embeds
-		$("#embeds").detach();
-		//$("#embeds").empty();
-			
 	});
 	//*/
 	
