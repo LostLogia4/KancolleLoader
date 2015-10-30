@@ -36,13 +36,11 @@ var ServerIP = ServerData.ip;
 			
 		}
 		
-		/*
-		//parse api_start2 master data to generate kanmusu CGs
+		//parse api_start2 master data to generate kanmusu CGs including version number
 		//Operational, but is currently bugged by flash plugin crash
 		$.each(shipgraph, function(index, ShipGraph){
-			$("#embeds").append("<embed width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf\" type=\"application/x-shockwave-flash\">");
+			$("#embeds").append("<embed width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf?VERSION="+ShipGraph.api_version+"\" type=\"application/x-shockwave-flash\">");
 		});
-		*/
 		
 	});
 	
