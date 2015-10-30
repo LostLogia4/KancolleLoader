@@ -1,2 +1,2 @@
 //edit here when new equipment are introduced
-var CurrentMaxEquip = 151;
+var CurrentMaxEquip = 157;
