@@ -39,12 +39,17 @@ var bgm = [
 	"kcs/resources/swf/sound_b_bgm_12.swf?version=2.0.1",
 	"kcs/resources/swf/sound_b_bgm_13.swf?version=2.0.1",
 	"kcs/resources/swf/sound_b_bgm_19.swf?version=2.1.7",
+	"kcs/resources/swf/sound_b_bgm_20.swf?version=2.1.9",
 	"kcs/resources/swf/sound_b_bgm_29.swf?version=2.2.4",
 	"kcs/resources/swf/sound_b_bgm_37.swf?version=0.0.0",
 	"kcs/resources/swf/sound_b_bgm_38.swf?version=0.0.0",
 	"kcs/resources/swf/sound_b_bgm_40.swf?version=0.0.0",
 	"kcs/resources/swf/sound_b_bgm_44.swf?version=0.0.0",
 	"kcs/resources/swf/sound_b_bgm_46.swf?version=0.0.0",
-	"kcs/resources/swf/sound_b_bgm_47.swf?version=0.0.0",
-	"kcs/resources/swf/sound_b_bgm_51.swf?version=0.0.0"
+	"kcs/resources/swf/sound_b_bgm_47.swf?version=0.0.0"
 ];
+
+	//List of deprecated BGMs (no longer used)
+	/*
+	"kcs/resources/swf/sound_b_bgm_51.swf?version=0.0.0"
+	*/
