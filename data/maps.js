@@ -1,6 +1,6 @@
 var worldmaps = [
-/*
 //eventmaps
+/*
 "/kcs/resources/swf/map/31_07.swf?version=1.0.0",
 "/kcs/resources/swf/map/31_06.swf?version=1.0.0",
 */
