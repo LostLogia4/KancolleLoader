@@ -11,8 +11,9 @@ How to use:
 6. Prepare a cup of coffee as the HTML file loads the game assets.
 
 Notes for users: 
+- Users with non-Chromium browser are adviced to temporarily disable the Flash plugin to keep the server from crashing.
 - The Kancolle Server allows only up to 6 connections at a time which would be hoarded by the embedded HTTP requests.
-- Any in-game requests during the asset loading to the server may lead to a catbomb. It is recommended to close Kancolle while the pages are still loading.
+- Any in-game requests during the asset loading to the server may lead to a catbomb, if the game ddn't crash altogether along with the plugin. It is recommended to close Kancolle while the pages are still loading.
 - You may check your server name from the title screen or Admiral's status page and compare it to the server entry in Kancolle Wikia.
 - Selecting the wrong server may cause unnecessary bloat to your browser cache, wasting, bandwidth, disk space and above all, your precious time.
 
