@@ -3,6 +3,7 @@ var ServerNum = parseInt( window.location.hash.substring(1) ,10) || 1;
 var ServerIndex = ServerNum - 1;
 var ServerData = servers[ServerIndex];
 var ServerIP = ServerData.ip;
+var ConnLimit = 5;
 
 (function(){
 	
@@ -42,6 +43,7 @@ var ServerIP = ServerData.ip;
 		//Operational, but is currently bugged by flash plugin crash
 		$.each(shipgraph, function(index, ShipGraph){
 			$("#embeds").append("<embed width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf?VERSION="+ShipGraph.api_version+"\" type=\"application/x-shockwave-flash\">");
+			//if (index % ConnLimit = 0) $("#embeds").delay(2000).on("ready").empty();
 		});
 		
 	});
