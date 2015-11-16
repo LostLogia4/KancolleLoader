@@ -44,6 +44,13 @@ var ConnLimit = 5;
 		$.each(shipgraph, function(index, ShipGraph){
 			$("#embeds").append("<embed width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf?VERSION="+ShipGraph.api_version+"\" type=\"application/x-shockwave-flash\">");
 			//if (index % ConnLimit = 0) $("#embeds").delay(2000).on("ready").empty();
+			
+			//experimental jquery get api method 
+			/*
+			$("#embeds").load( "http://" + ServerIP + "/kcs/resources/swf/ships/" + ShipGraph.api_filename+".swf?VERSION=" + ShipGraph.api_version );
+			if (index % ConnLimit = 0) $("#embeds").delay(1000);
+			*/
+			
 		});
 		
 	});
