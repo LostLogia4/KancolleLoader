@@ -31,7 +31,7 @@ var bgm = [
 	"kcs/resources/swf/sound_b_bgm_53.swf",
 	"kcs/resources/swf/sound_b_bgm_54.swf",
 	"kcs/resources/swf/sound_b_bgm_55.swf",
-
+	"kcs/resources/swf/sound_b_bgm_56.swf",
 	
 	//Battle BGM theme
 	"kcs/resources/swf/sound_b_bgm_1.swf?version=2.0.6",
