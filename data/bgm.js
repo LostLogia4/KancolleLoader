@@ -13,6 +13,7 @@ var bgm = [
 	"kcs/resources/bgm_p/113c.swf",
 	"kcs/resources/bgm_p/116e.swf",
 	"kcs/resources/bgm_p/118c.swf",
+	"kcs/resources/bgm_p/205c.swf",
 	"kcs/resources/bgm_p/206i.swf",
 	"kcs/resources/bgm_p/212y.swf",
 	"kcs/resources/bgm_p/213j.swf",
@@ -23,6 +24,14 @@ var bgm = [
 	"kcs/resources/bgm_p/227f.swf",
 	"kcs/resources/bgm_p/903y.swf",
 	"kcs/resources/bgm_p/904w.swf",
+	
+	//Event BGM theme
+	"kcs/resources/bgm_p/905w.swf",
+	"kcs/resources/swf/sound_b_bgm_52.swf",
+	"kcs/resources/swf/sound_b_bgm_53.swf",
+	"kcs/resources/swf/sound_b_bgm_54.swf",
+	"kcs/resources/swf/sound_b_bgm_55.swf",
+
 	
 	//Battle BGM theme
 	"kcs/resources/swf/sound_b_bgm_1.swf?version=2.0.6",
