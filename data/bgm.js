@@ -13,6 +13,7 @@ var bgm = [
 	"kcs/resources/bgm_p/113c.swf",
 	"kcs/resources/bgm_p/116e.swf",
 	"kcs/resources/bgm_p/118c.swf",
+	"kcs/resources/bgm_p/119t.swf",
 	"kcs/resources/bgm_p/205c.swf",
 	"kcs/resources/bgm_p/206i.swf",
 	"kcs/resources/bgm_p/212y.swf",
