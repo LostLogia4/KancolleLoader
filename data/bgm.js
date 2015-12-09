@@ -27,12 +27,6 @@ var bgm = [
 	"kcs/resources/bgm_p/904w.swf",
 	
 	//Event BGM theme
-	"kcs/resources/bgm_p/905w.swf",
-	"kcs/resources/swf/sound_b_bgm_52.swf",
-	"kcs/resources/swf/sound_b_bgm_53.swf",
-	"kcs/resources/swf/sound_b_bgm_54.swf",
-	"kcs/resources/swf/sound_b_bgm_55.swf",
-	"kcs/resources/swf/sound_b_bgm_56.swf",
 	
 	//Battle BGM theme
 	"kcs/resources/swf/sound_b_bgm_1.swf?version=2.0.6",
@@ -61,5 +55,11 @@ var bgm = [
 
 	//List of deprecated BGMs (no longer used)
 	/*
-	"kcs/resources/swf/sound_b_bgm_51.swf?version=0.0.0"
+	"kcs/resources/bgm_p/905w.swf",
+	"kcs/resources/swf/sound_b_bgm_51.swf",
+	"kcs/resources/swf/sound_b_bgm_52.swf",
+	"kcs/resources/swf/sound_b_bgm_53.swf",
+	"kcs/resources/swf/sound_b_bgm_54.swf",
+	"kcs/resources/swf/sound_b_bgm_55.swf",
+	"kcs/resources/swf/sound_b_bgm_56.swf"
 	*/
