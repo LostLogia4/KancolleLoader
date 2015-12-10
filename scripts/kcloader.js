@@ -1,5 +1,5 @@
 //A global variable for parsing hashed suffix and assign the appropriate server.
-var ServerNum = parseInt( window.location.hash.substring(1) ,10) || 1;
+var ServerNum = parseInt( window.location.hash.substring(1) , 10 ) || 1;
 var ServerIndex = ServerNum - 1;
 var ServerData = servers[ServerIndex];
 var ServerIP = ServerData.ip;
@@ -28,6 +28,19 @@ var ConnLimit = 5;
 			//Zero paddings
 			if (EquipIDNum < 100) EquipIDNum = "0" + EquipIDNum;
 			if (EquipIDNum <  10) EquipIDNum = "0" + EquipIDNum;
+			
+			//special code for damecon
+			/*
+			if (EquipIDNum == 042) {
+			
+				$("#embeds").append("<img width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"+ServerIP+"/kcs/resources/image/slotitem/card/"+EquipIDNum+".png\">");
+				$("#embeds").append("<img width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"+ServerIP+"/kcs/resources/image/slotitem/item_on/"+EquipIDNum+".png\">");
+				$("#embeds").append("<img width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"+ServerIP+"/kcs/resources/image/slotitem/remodal/"+EquipIDNum+".png\">");
+				$("#embeds").append("<img width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"+ServerIP+"/kcs/resources/image/slotitem/statustop_item/"+EquipIDNum+".png\">");
+				EquipIDNum = "0" + EquipIDNum++;
+			
+			}
+			*/
 		
 			//Image prefetch embeds
 			$("#embeds").append("<img width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"+ServerIP+"/kcs/resources/image/slotitem/card/"+EquipIDNum+".png\">");
@@ -42,15 +55,10 @@ var ConnLimit = 5;
 		//parse api_start2 master data to generate kanmusu CGs including version number
 		//Operational, but is currently bugged by flash plugin crash
 		$.each(shipgraph, function(index, ShipGraph){
-			$("#embeds").append("<embed width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf?VERSION="+ShipGraph.api_version+"\" type=\"application/x-shockwave-flash\">");
-			//if (index % ConnLimit = 0) $("#embeds").delay(2000).on("ready").empty();
 			
-			//pseudocode for if wrapper to avoid tripping
-			/*
-			if (ShipGraph.api_name !== "なし") {
-				
+			if ((ShipGraph.api_sortno != 0) || (ShipGraph.api_id > 500)) {
+				$("#embeds").append("<embed width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf?VERSION="+ShipGraph.api_version+"\" type=\"application/x-shockwave-flash\">");
 			}
-			*/
 
 			//experimental jquery get api method 
 			/*
