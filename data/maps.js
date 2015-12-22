@@ -1,8 +1,13 @@
 var worldmaps = [
+
 //eventmaps
 /*
-"/kcs/resources/swf/map/31_07.swf?version=1.0.0",
-"/kcs/resources/swf/map/31_06.swf?version=1.0.0",
+"/kcs/resources/swf/map/33_01.swf?version=1.0.0",
+"/kcs/resources/swf/map/33_02.swf?version=1.0.0",
+"/kcs/resources/swf/map/33_03.swf?version=1.0.0",
+"/kcs/resources/swf/map/33_04.swf?version=1.0.0",
+"/kcs/resources/swf/map/33_05.swf?version=1.0.0",
+"/kcs/resources/swf/map/33_06.swf?version=1.0.0",
 */
 
 //world maps
