@@ -1,6 +1,7 @@
 var bgm = [
 
 	//Home port BGM theme
+	"kcs/resources/bgm_p/101r.swf",
 	"kcs/resources/bgm_p/103v.swf",
 	"kcs/resources/bgm_p/104a.swf",
 	"kcs/resources/bgm_p/105h.swf",
@@ -25,8 +26,6 @@ var bgm = [
 	"kcs/resources/bgm_p/219s.swf",
 	"kcs/resources/bgm_p/226k.swf",
 	"kcs/resources/bgm_p/227f.swf",
-	"kcs/resources/bgm_p/903y.swf",
-	"kcs/resources/bgm_p/904w.swf",
 	
 	//Event BGM theme
 	
