@@ -1,5 +1,5 @@
 //edit here when new equipment are introduced
-var CurrentMaxEquip = 157;
+var CurrentMaxEquip = 160;
 var Useitem = [
                 "004",
                 "052",
