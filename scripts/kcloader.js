@@ -57,8 +57,8 @@ var ConnLimit = 5;
 			$("#embeds").append("<img width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"+ServerIP+"/kcs/resources/image/slotitem/btxt_flat/"+EquipIDNum+".png\">");
 		});
 
-		//load equipment text image from EquipTxt variable
-		$.each(Useitem, function(index, ItemIDNum){
+		//load item image from UseItem variable
+		$.each(UseItem, function(index, ItemIDNum){
 			$("#embeds").append("<img width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"+ServerIP+"/kcs/resources/image/slotitem/btxt_flat/"+ItemIDNum+".png\">");
 		});
 		
