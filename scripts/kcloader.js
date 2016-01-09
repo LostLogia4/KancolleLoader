@@ -52,6 +52,16 @@ var ConnLimit = 5;
 			
 		}
 		
+		//load equipment text image from EquipTxt variable
+		$.each(EquipTxt, function(index, EquipIDNum){
+			$("#embeds").append("<img width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"+ServerIP+"/kcs/resources/image/slotitem/btxt_flat/"+EquipIDNum+".png\">");
+		});
+
+		//load equipment text image from EquipTxt variable
+		$.each(Useitem, function(index, ItemIDNum){
+			$("#embeds").append("<img width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"+ServerIP+"/kcs/resources/image/slotitem/btxt_flat/"+ItemIDNum+".png\">");
+		});
+		
 		//parse api_start2 master data to generate kanmusu CGs including version number
 		//Operational, but is currently bugged by flash plugin crash
 		$.each(shipgraph, function(index, ShipGraph){
