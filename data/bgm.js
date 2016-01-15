@@ -6,7 +6,6 @@ var bgm = [
 	"kcs/resources/bgm_p/104a.swf",
 	"kcs/resources/bgm_p/105h.swf",
 	"kcs/resources/bgm_p/106q.swf",
-	"kcs/resources/bgm_p/107b.swf",
 	"kcs/resources/bgm_p/108o.swf",
 	"kcs/resources/bgm_p/109k.swf",
 	"kcs/resources/bgm_p/110s.swf",
@@ -59,6 +58,7 @@ var bgm = [
 
 	//List of deprecated BGMs (no longer used)
 	/*
+	"kcs/resources/bgm_p/107b.swf",
 	"kcs/resources/bgm_p/903y.swf",
 	"kcs/resources/bgm_p/904w.swf",
 	"kcs/resources/bgm_p/905w.swf",
