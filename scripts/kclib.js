@@ -73,6 +73,7 @@ function loadshipcg() {
 	//parse api_start2 master data to generate kanmusu CGs including version number
 	//Operational, but is currently bugged by flash plugin crash
 	$.each(shipgraph, function(index, ShipGraph){
+		//if ((ShipGraph.api_battle_n != [0, 0]) && (ShipGraph.api_battle_d != [0, 0])) {
 		if ((ShipGraph.api_sortno != 0) || (ShipGraph.api_id > 500)) {
 			$("#embeds").append(swflink+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf?VERSION="+ShipGraph.api_version+flalink);
 		}
