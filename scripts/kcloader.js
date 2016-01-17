@@ -66,13 +66,13 @@ var ConnLimit = 5;
 		//Operational, but is currently bugged by flash plugin crash
 		$.each(shipgraph, function(index, ShipGraph){
 			
+			//blacklistID
+			// && (blacklistID.indexOf(ShipGraph.api_id) <= ~0)
 			if ((ShipGraph.api_sortno != 0) || (ShipGraph.api_id > 500)) {
 				//intentional mistagging to prevent plugin render.
 				$("#embeds").append("<img width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf?VERSION="+ShipGraph.api_version+"\">");
 			}
 
-
-			
 		});
 		
 	});
