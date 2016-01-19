@@ -73,7 +73,7 @@ function loadshipcg() {
 	//parse api_start2 master data to generate kanmusu CGs including version number
 	//Intentionally wrapped in img to avoid crashing the Flash plugin.
 	$.each(shipgraph, function(index, ShipGraph){
-		if ((ShipGraph.api_sortno != 0) || (ShipGraph.api_id > 500) && (blacklistID.indexOf(ShipGraph.api_id) <= ~0)) {
+		if (( (ShipGraph.api_sortno != 0) || (ShipGraph.api_id > 500) ) && (blacklistID.indexOf(ShipGraph.api_id) <= ~0)) {
 			$("#embeds").append(imglink+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf?VERSION="+ShipGraph.api_version+"\">");
 		}
 	});
