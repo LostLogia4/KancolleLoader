@@ -10,14 +10,14 @@ var imglink = "<img width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=
 //load static info from bgm.js
 function loadbgm() {
 	$.each(bgm, function(index, StaticAsset){
-		$("#embeds").append(swflink+ServerIP+"/"+StaticAsset+flalink);
+		$("#embeds").append(imglink+ServerIP+"/"+StaticAsset++"\">");
 	});
 }
 
 //load static info from maps.js
 function loadmap() {
 	$.each(worldmaps, function(index, StaticAsset){
-		$("#embeds").append(swflink+ServerIP+"/"+StaticAsset+flalink);
+		$("#embeds").append(imglink+ServerIP+"/"+StaticAsset++"\">");
 	});
 }
 
