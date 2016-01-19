@@ -55,15 +55,17 @@ function loadequip() {
 
 function loadeqtxt() {
 	//load equipment text image from EquipTxt variable
-	$.each(EquipTxt, function(index, EquipIDTxt){
-		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/btxt_flat/"+EquipIDTxt+".png\">");
+	$.each(EquipTxt, function(index, EquipIDNum){
+		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/btxt_flat/"+EquipIDNum+".png\">");
 	});
+	
+	
 }
 
 function loaditem() {
 	//load item image from UseItem variable
 	$.each(UseItem, function(index, ItemIDNum){
-		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/btxt_flat/"+ItemIDNum+".png\">");
+		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/useitem/card/"+ItemIDNum+".png\">");
 	});
 }
 
