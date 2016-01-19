@@ -29,24 +29,12 @@ function loadequip() {
 		//Zero paddings
 		if (EquipIDNum < 100) EquipIDNum = "0" + EquipIDNum;
 		if (EquipIDNum <  10) EquipIDNum = "0" + EquipIDNum;
-		
-		//special code for damecon
-		if (EquipIDNum == 042) {
-		
-			$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/card/"+EquipIDNum+".png\">");
-			$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_on/"+EquipIDNum+".png\">");
-			$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/remodal/"+EquipIDNum+".png\">");
-			$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/statustop_item/"+EquipIDNum+".png\">");
 
-			//increment ID number to prevent redundant call.
-			EquipIDNum = "0" + EquipIDNum++;
-		}
-	
-		//Image prefetch embeds
+		//Image prefetch embeds (plus exclusion list)
 		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/card/"+EquipIDNum+".png\">");
-		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_character/"+EquipIDNum+".png\">");
+		if (EquipIDNum != 42) $("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_character/"+EquipIDNum+".png\">");
 		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_on/"+EquipIDNum+".png\">");
-		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_up/"+EquipIDNum+".png\">");
+		if (EquipIDNum != 42) $("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_up/"+EquipIDNum+".png\">");
 		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/remodal/"+EquipIDNum+".png\">");
 		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/statustop_item/"+EquipIDNum+".png\">");
 		
@@ -73,7 +61,7 @@ function loadshipcg() {
 	//parse api_start2 master data to generate kanmusu CGs including version number
 	//Intentionally wrapped in img to avoid crashing the Flash plugin.
 	$.each(shipgraph, function(index, ShipGraph){
-		if (( (ShipGraph.api_sortno != 0) || (ShipGraph.api_id > 500) ) && (blacklistID.indexOf(ShipGraph.api_id) <= ~0)) {
+		if (( (ShipGraph.api_sortno != 0) || (ShipGraph.api_id > 500) ) && !(blacklistID.indexOf(ShipGraph.api_id) >= 0)) {
 			$("#embeds").append(imglink+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf?VERSION="+ShipGraph.api_version+"\">");
 		}
 	});
