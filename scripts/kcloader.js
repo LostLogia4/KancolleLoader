@@ -10,16 +10,25 @@ var imglink = "<img width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=
 //load static info from bgm.js
 function loadbgm() {
 	$.each(bgm, function(index, StaticAsset){
-		$("#embeds").append(imglink+ServerIP+"/"+StaticAsset+"\">");
+		$("#embeds").append(imglink+ServerIP+"/kcs/resources/"+StaticAsset+"\">");
 	});
 }
 
 //load static info from maps.js
 function loadmap() {
 	$.each(worldmaps, function(index, StaticAsset){
-		$("#embeds").append(imglink+ServerIP+"/"+StaticAsset+"\">");
+		$("#embeds").append(imglink+ServerIP+"/kcs/resources/swf/map/"+StaticAsset+"\">");
 	});
 }
+
+//load static info from maps.js
+function loadfurnish() {
+	$.each(furniture, function(index, StaticAsset){
+		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/furniture/"+StaticAsset+"\">");
+	});
+}
+
+
 
 //load equipment icons via for loops
 function loadequip() {
@@ -76,6 +85,7 @@ function loadshipcg() {
 		
 		loadbgm();
 		loadmap();
+		loadfurnish();
 		loadequip();
 		loadeqtxt();
 		loaditem();
