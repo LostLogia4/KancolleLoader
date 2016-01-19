@@ -1,4 +1,4 @@
-var animated = [
+var furniture = [
 		"chest/001.png",
 		"chest/003.png",
 		"chest/005.png",
