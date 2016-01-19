@@ -55,8 +55,8 @@ function loadequip() {
 
 function loadeqtxt() {
 	//load equipment text image from EquipTxt variable
-	$.each(EquipTxt, function(index, EquipIDNum){
-		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/btxt_flat/"+EquipIDNum+".png\">");
+	$.each(EquipTxt, function(index, EquipIDTxt){
+		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/btxt_flat/"+EquipIDTxt+".png\">");
 	});
 }
 
