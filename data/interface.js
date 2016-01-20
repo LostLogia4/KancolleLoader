@@ -1,13 +1,15 @@
-//conversion instruction from SwfVer.as
-/*
-	from "mm_common":"2.6.8",
-	replace [":"] with [ = "]
-	prepend [var ] on every line start
-	remove [,]
-*/
-
+//local function for containing interface variables. (too many to be assigned as global variables)
 function defineInterface(){
 
+	//conversion instruction from SwfVer.as
+	/*
+		from "mm_common":"2.6.8",
+		replace [":"] with [ = "]
+		prepend [var ] on every line start
+		remove [,]
+	*/
+
+	//local variable for ui link (as string)
 	var mm_common = "2.6.8"
 	var mm_port = "2.6.6"
 	var rm_font = "2.3"
@@ -32,10 +34,11 @@ function defineInterface(){
 	var xm_wedding = "2.0.10"
 	var xm_revamp = "2.6.4"
 	
-	//variable for ui link
+	//local variable for ui link
 	var uiversion = "?version="
 	
-	var uilinkage = [
+	//generated links
+	var uilinkgen = [
 			"/kcs/PortMain.swf"+uiversion+mm_port,
 			"/kcs/resources/swf/commonAssets.swf"+uiversion+mm_common,
 			"/kcs/resources/swf/font.swf"+uiversion+rm_font,
@@ -61,5 +64,5 @@ function defineInterface(){
 			"/kcs/scenes/RevampMain.swf"+uiversion+xm_revamp
 			];
 	
-	return uilinkage;
+	return uilinkgen;
 }
