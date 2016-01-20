@@ -1,11 +1,16 @@
-//A global variable for parsing hashed suffix and assign the appropriate server.
+//Global variables for parsing hashed suffix and assign the appropriate server.
 var ServerNum = parseInt( window.location.hash.substring(1) , 10 ) || 1;
 var ServerIndex = ServerNum - 1;
 var ServerData = servers[ServerIndex];
 var ServerIP = ServerData.ip;
 
-//A global variable for shortening the link names in Javascript.
+//Global variables for current and expirydate (to be moved later)
+var currentDate = new Date();
+var expiryDate = new Date(expiryDate);
+
+//Global variables for shortening link names in Javascript.
 var imglink = "<img width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"
+
 
 //load static info from bgm.js
 function loadbgm() {
@@ -21,14 +26,12 @@ function loadmap() {
 	});
 }
 
-//load static info from maps.js
+//load static info from furniture.js
 function loadfurnish() {
 	$.each(furniture, function(index, StaticAsset){
 		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/furniture/"+StaticAsset+"\">");
 	});
 }
-
-
 
 //load equipment icons via for loops
 function loadequip() {
@@ -55,8 +58,6 @@ function loadeqtxt() {
 	$.each(EquipTxt, function(index, EquipIDNum){
 		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/btxt_flat/"+EquipIDNum+".png\">");
 	});
-	
-	
 }
 
 function loaditem() {
@@ -76,6 +77,19 @@ function loadshipcg() {
 	});
 }
 
+//wrapper function
+function loadvariablelinks() {
+	//create confirmation box if the stipulated expiry date has been reached.
+	if (currentDate > expiryDate) {
+		$("#progress-text").text("CG Links has expired. Load anyway?");
+		//create yes button
+	} else {
+		//loadinterface();
+		loadshipcg();
+	}
+}
+
+//primary function
 (function(){
 	
 	$(document).on("ready", function(){
