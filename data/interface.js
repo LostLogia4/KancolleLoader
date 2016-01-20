@@ -1,6 +1,12 @@
 //generated link
 //$("#embeds").append(imglink+ServerIP+"uilinkage+"\">");
 
+//conversion instruction
+/*	replace [":"] with [ = "]
+	prepend [var ] on every line start
+	remove [,]
+*/
+
 var uiversion = "?version="
 var mm_common = "2.6.8"
 var mm_port = "2.6.6"
@@ -27,7 +33,7 @@ var xm_wedding = "2.0.10"
 var xm_revamp = "2.6.4"
 
 //reference actionscript variable
-//"xm_revamp":"2.6.4"
+/*"xm_revamp":"2.6.4",*/
 
 var uilinkage = [
 		"/kcs/resources/swf/commonAssets.swf"+uiversion+mm_common,
