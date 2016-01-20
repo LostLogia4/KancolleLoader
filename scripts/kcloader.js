@@ -77,6 +77,15 @@ function loadshipcg() {
 	});
 }
 
+//calls Interface.js local function before generating interface links
+function loadinterface() {
+	uilinkage = defineInterface();
+	
+	$.each(uilinkage, function(index, DynamicAsset){
+		$("#embeds").append(imglink+ServerIP+DynamicAsset+"\">");
+	});
+}
+
 //wrapper function
 function loadvariablelinks() {
 	//create confirmation box if the stipulated expiry date has been reached.
