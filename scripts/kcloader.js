@@ -82,7 +82,7 @@ function loadvariablelinks() {
 	//create confirmation box if the stipulated expiry date has been reached.
 	if (currentDate > expiryDate) {
 		$("#progress-text").text("CG Links has expired. Load anyway?");
-		//create yes button
+		//append a load UI and CG button 
 	} else {
 		//loadinterface();
 		loadshipcg();
@@ -108,3 +108,12 @@ function loadvariablelinks() {
 	});
 	
 })();
+
+//event handlers
+/*
+	$(document).on("click", "#loadUI", loadinterface());
+	$(document).on("click", "#loadCG", loadshipcg());
+*/
+
+
+
