@@ -4,23 +4,35 @@ var ServerIndex = ServerNum - 1;
 var ServerData = servers[ServerIndex];
 var ServerIP = ServerData.ip;
 
-//Global variables for current and expirydate (to be moved later)
+//Global variables for current and expirydate
 var currentDate = new Date();
 var expiryDate = new Date(expiryDate);
 
-//wrapper function
-function loaddynamiclinks() {
+//wrapper function for links with (probably outdated) version parameters
+function loadvlinks() {
 	//create confirmation box if the stipulated expiry date has been reached.
 	if (currentDate > expiryDate) {
+		//add a warning text (CSS to be added later)
 		$("#progress-text").text("CG Links may be outdated. Load anyway?");
+		
 		//append a load UI and CG button 
-		//event handlers
-		/*
-		$(document).one('click','#loadUI',loadinterface);
-		$(document).one('click','#loadCG',loadshipcg);
-		*/
+		$("#progress")
+			.append('<button id="loadUI">Load UI</button>')
+			.append('<button id="loadCG">Load CG</button>');
+		
+    		$("#loadUI").click(function() {
+			loadinterface();
+			$(this).text("UI loaded").attr('disabled', true);
+    		});
+    		
+    		$("#loadCG").click(function() {
+			loadshipcg();
+			$(this).text("CG loaded").attr('disabled', true);
+    		});
+		
 	} else {
-		//loadinterface();
+		//just load both of them.
+		loadinterface();
 		loadshipcg();
 	}
 }
@@ -39,7 +51,7 @@ function loaddynamiclinks() {
 		loadequip();
 		loadeqtxt();
 		loaditem();
-		loadshipcg();
+		loadvlinks();
 		
 	});
 	
