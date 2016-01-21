@@ -12,19 +12,24 @@ var expiryDate = new Date(expiryDate);
 function loadvlinks() {
 	//create confirmation box if the stipulated expiry date has been reached.
 	if (currentDate > expiryDate) {
-		//add a warning text (CSS to be added later)
-		$("#progress-text").text("CG Links may be outdated. Load anyway?");
+		//add a warning text
+		$("#progress-text")
+			.css("font-weight","bold")
+			.css("color","red")
+			.text("CG Links may be outdated. Load anyway?");
 		
 		//append a load UI and CG button 
 		$("#progress")
 			.append('<button id="loadUI">Load UI</button>')
 			.append('<button id="loadCG">Load CG</button>');
 		
+		//event handler for load UI button.
     		$("#loadUI").click(function() {
 			loadinterface();
 			$(this).text("UI loaded").attr('disabled', true);
     		});
     		
+		//event handler for load CG button.
     		$("#loadCG").click(function() {
 			loadshipcg();
 			$(this).text("CG loaded").attr('disabled', true);
