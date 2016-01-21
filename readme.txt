@@ -24,7 +24,7 @@ Files to edit/update by users are located in data folder. Below are short descri
 05. maps.js contain map links, event maps available may be added from time to time.
 06. latest.js contain contains links that are needed urgently, such as new maps, bgms and kanmusu CGs. **
 07. maintenance.js contains expiry date for CG links, as well as blacklisted ship IDs.
-08. raw.js contains api_mst_shipgraph from api_start2 call. *
+08. shipgraph.js contains api_mst_shipgraph from api_start2 call. *
 09. servers.js contain Kancolle server links.
 
 *  Considered as dynamic assets as they expires on every maintenance.
