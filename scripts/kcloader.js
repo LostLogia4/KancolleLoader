@@ -1,81 +1,48 @@
-//A global variable for parsing hashed suffix and assign the appropriate server.
+//Global variables for parsing hashed suffix and assign the appropriate server.
 var ServerNum = parseInt( window.location.hash.substring(1) , 10 ) || 1;
 var ServerIndex = ServerNum - 1;
 var ServerData = servers[ServerIndex];
 var ServerIP = ServerData.ip;
 
-//A global variable for shortening the link names in Javascript.
-var imglink = "<img width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"
+//Global variables for current and expirydate
+var currentDate = new Date();
+var expiryDate = new Date(expiryDate);
 
-//load static info from bgm.js
-function loadbgm() {
-	$.each(bgm, function(index, StaticAsset){
-		$("#embeds").append(imglink+ServerIP+"/kcs/resources/"+StaticAsset+"\">");
-	});
-}
-
-//load static info from maps.js
-function loadmap() {
-	$.each(worldmaps, function(index, StaticAsset){
-		$("#embeds").append(imglink+ServerIP+"/kcs/resources/swf/map/"+StaticAsset+"\">");
-	});
-}
-
-//load static info from maps.js
-function loadfurnish() {
-	$.each(furniture, function(index, StaticAsset){
-		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/furniture/"+StaticAsset+"\">");
-	});
-}
-
-
-
-//load equipment icons via for loops
-function loadequip() {
-			
-	for (EquipIDNum = 1; EquipIDNum <= CurrentMaxEquip; EquipIDNum++) {
-	
-		//Zero paddings
-		if (EquipIDNum < 100) EquipIDNum = "0" + EquipIDNum;
-		if (EquipIDNum <  10) EquipIDNum = "0" + EquipIDNum;
-
-		//Image prefetch embeds (plus exclusion list)
-		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/card/"+EquipIDNum+".png\">");
-		if (EquipIDNum != 42) $("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_character/"+EquipIDNum+".png\">");
-		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_on/"+EquipIDNum+".png\">");
-		if (EquipIDNum != 42) $("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_up/"+EquipIDNum+".png\">");
-		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/remodal/"+EquipIDNum+".png\">");
-		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/statustop_item/"+EquipIDNum+".png\">");
+//wrapper function for links with (probably outdated) version parameters
+function loadvlinks() {
+	//create confirmation box if the stipulated expiry date has been reached.
+	if (currentDate > expiryDate) {
+		//add a warning text
+		$("#progress-text")
+			.css("font-weight","bold")
+			.css("color","red")
+			.text("CG Links may be outdated. Load anyway?");
 		
+		//append a load UI and CG button 
+		$("#progress")
+			.append('<button id="loadUI">Load UI</button>')
+			.append('<button id="loadCG">Load CG</button>');
+		
+		//event handler for load UI button.
+    		$("#loadUI").click(function() {
+			loadinterface();
+			$(this).text("UI loaded").attr('disabled', true);
+    		});
+    		
+		//event handler for load CG button.
+    		$("#loadCG").click(function() {
+			loadshipcg();
+			$(this).text("CG loaded").attr('disabled', true);
+    		});
+		
+	} else {
+		//just load both of them.
+		loadinterface();
+		loadshipcg();
 	}
 }
 
-function loadeqtxt() {
-	//load equipment text image from EquipTxt variable
-	$.each(EquipTxt, function(index, EquipIDNum){
-		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/btxt_flat/"+EquipIDNum+".png\">");
-	});
-	
-	
-}
-
-function loaditem() {
-	//load item image from UseItem variable
-	$.each(UseItem, function(index, ItemIDNum){
-		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/useitem/card/"+ItemIDNum+".png\">");
-	});
-}
-
-function loadshipcg() {
-	//parse api_start2 master data to generate kanmusu CGs including version number
-	//Intentionally wrapped in img to avoid crashing the Flash plugin.
-	$.each(shipgraph, function(index, ShipGraph){
-		if (( (ShipGraph.api_sortno != 0) || (ShipGraph.api_id > 500) ) && !(blacklistID.indexOf(ShipGraph.api_id) >= 0)) {
-			$("#embeds").append(imglink+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf?VERSION="+ShipGraph.api_version+"\">");
-		}
-	});
-}
-
+//primary function
 (function(){
 	
 	$(document).on("ready", function(){
@@ -89,7 +56,7 @@ function loadshipcg() {
 		loadequip();
 		loadeqtxt();
 		loaditem();
-		loadshipcg();
+		loadvlinks();
 		
 	});
 	
