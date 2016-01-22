@@ -31,13 +31,19 @@ function loadequip() {
 		if (EquipIDNum < 100) EquipIDNum = "0" + EquipIDNum;
 		if (EquipIDNum <  10) EquipIDNum = "0" + EquipIDNum;
 
-		//Image prefetch embeds (plus exclusion list)
-		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/card/"+EquipIDNum+".png\">");
-		if (EquipIDNum != 42) $("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_character/"+EquipIDNum+".png\">");
-		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_on/"+EquipIDNum+".png\">");
-		if (EquipIDNum != 42) $("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_up/"+EquipIDNum+".png\">");
-		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/remodal/"+EquipIDNum+".png\">");
-		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/statustop_item/"+EquipIDNum+".png\">");
+		//Image prefetch embeds
+		$("#embeds")
+			.append(imglink+ServerIP+"/kcs/resources/image/slotitem/card/"+EquipIDNum+".png\">");
+			.append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_on/"+EquipIDNum+".png\">");
+			.append(imglink+ServerIP+"/kcs/resources/image/slotitem/remodal/"+EquipIDNum+".png\">");
+			.append(imglink+ServerIP+"/kcs/resources/image/slotitem/statustop_item/"+EquipIDNum+".png\">");
+		
+		//excluded for damecon
+		if (EquipIDNum != 42) {
+			$("#embeds")
+			.append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_character/"+EquipIDNum+".png\">");
+			.append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_up/"+EquipIDNum+".png\">");
+		}
 		
 	}
 }
@@ -79,6 +85,30 @@ function loadshipcg() {
 	$.each(shipgraph, function(index, ShipGraph){
 		if (( (ShipGraph.api_sortno != 0) || (ShipGraph.api_id > 500) ) && !(blacklistID.indexOf(ShipGraph.api_id) >= 0)) {
 			$("#embeds").append(imglink+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf?VERSION="+ShipGraph.api_version+"\">");
+		}
+	});
+}
+
+function loadshipvoice() {
+	//parse api_start2 master data to generate kanmusu CGs including version number
+	$.each(shipgraph, function(index, ShipGraph){
+		if ((ShipGraph.api_sortno != 0) && (ShipGraph.api_id < 500))) {
+			//Assign the link into a local variable
+			var shipvoicelnk = imglink+ServerIP+"/kcs/sound/kc"+ShipGraph.api_filename;
+			//loop for numbers
+			for (LineNum = 0; LineNum <= 28; LineNum++) {
+			//skip line 22
+			if (LineNum == 22) LineNum++;
+			//append the remaining parameters
+			if (ShipGraph.api_version == 1) {
+				shipvoicelnk += LineNum+".mp3\">";
+			} else {
+				shipvoicelnk += LineNum+".mp3?version="+ShipGraph.api_version+"\">";
+			}
+			
+			$("#embeds").append(shipvoicelnk);
+			
+			}
 		}
 	});
 }
