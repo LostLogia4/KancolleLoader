@@ -1,24 +1,26 @@
 //Global variables for shortening link names in Javascript.
 var imglink = "<img width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"
+//Optimization of embeds div query
+var $embed = $("#embeds");
 
 //load static info from bgm.js
 function loadbgm() {
 	$.each(bgm, function(index, StaticAsset){
-		$("#embeds").append(imglink+ServerIP+"/kcs/resources/"+StaticAsset+"\">");
+		$embed.append(imglink+ServerIP+"/kcs/resources/"+StaticAsset+"\">");
 	});
 }
 
 //load static info from maps.js
 function loadmap() {
 	$.each(worldmaps, function(index, StaticAsset){
-		$("#embeds").append(imglink+ServerIP+"/kcs/resources/swf/map/"+StaticAsset+"\">");
+		$embed.append(imglink+ServerIP+"/kcs/resources/swf/map/"+StaticAsset+"\">");
 	});
 }
 
 //load static info from furniture.js
 function loadfurnish() {
 	$.each(furniture, function(index, StaticAsset){
-		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/furniture/"+StaticAsset+"\">");
+		$embed.append(imglink+ServerIP+"/kcs/resources/image/furniture/"+StaticAsset+"\">");
 	});
 }
 
@@ -31,19 +33,13 @@ function loadequip() {
 		if (EquipIDNum < 100) EquipIDNum = "0" + EquipIDNum;
 		if (EquipIDNum <  10) EquipIDNum = "0" + EquipIDNum;
 
-		//Image prefetch embeds
-		$("#embeds")
-			.append(imglink+ServerIP+"/kcs/resources/image/slotitem/card/"+EquipIDNum+".png\">");
-			.append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_on/"+EquipIDNum+".png\">");
-			.append(imglink+ServerIP+"/kcs/resources/image/slotitem/remodal/"+EquipIDNum+".png\">");
-			.append(imglink+ServerIP+"/kcs/resources/image/slotitem/statustop_item/"+EquipIDNum+".png\">");
-		
-		//excluded for damecon
-		if (EquipIDNum != 42) {
-			$("#embeds")
-			.append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_character/"+EquipIDNum+".png\">");
-			.append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_up/"+EquipIDNum+".png\">");
-		}
+		//Image prefetch embeds (with damecon exception)
+		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/card/"+EquipIDNum+".png\">");
+		if (EquipIDNum != 42) $embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_character/"+EquipIDNum+".png\">");
+		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_on/"+EquipIDNum+".png\">");
+		if (EquipIDNum != 42) $embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_up/"+EquipIDNum+".png\">");
+		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/remodal/"+EquipIDNum+".png\">");
+		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/statustop_item/"+EquipIDNum+".png\">");
 		
 	}
 }
@@ -58,9 +54,9 @@ function loadtitlecall() {
 		
 		//mp3 prefetch embeds
 		//Intentionally wrapped in img for silence.
-		$("#embeds").append(imglink+ServerIP+"/kcs/sound/titlecall/a/"+CallIDNum+".mp3\">");
-		if (CallIDNum <= 13) $("#embeds").append(imglink+ServerIP+"/kcs/sound/titlecall/b/"+CallIDNum+".mp3\">");
-		if (CallIDNum <= 11) $("#embeds").append(imglink+ServerIP+"/kcs/sound/titlecall/c/"+CallIDNum+".mp3\">");
+		$embed.append(imglink+ServerIP+"/kcs/sound/titlecall/a/"+CallIDNum+".mp3\">");
+		if (CallIDNum <= 13) $embed.append(imglink+ServerIP+"/kcs/sound/titlecall/b/"+CallIDNum+".mp3\">");
+		if (CallIDNum <= 11) $embed.append(imglink+ServerIP+"/kcs/sound/titlecall/c/"+CallIDNum+".mp3\">");
 
 	}
 }
@@ -68,14 +64,14 @@ function loadtitlecall() {
 function loadeqtxt() {
 	//load equipment text image from EquipTxt variable
 	$.each(EquipTxt, function(index, EquipIDNum){
-		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/btxt_flat/"+EquipIDNum+".png\">");
+		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/btxt_flat/"+EquipIDNum+".png\">");
 	});
 }
 
 function loaditem() {
 	//load item image from UseItem variable
 	$.each(UseItem, function(index, ItemIDNum){
-		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/useitem/card/"+ItemIDNum+".png\">");
+		$embed.append(imglink+ServerIP+"/kcs/resources/image/useitem/card/"+ItemIDNum+".png\">");
 	});
 }
 
@@ -84,7 +80,7 @@ function loadshipcg() {
 	//Intentionally wrapped in img to avoid crashing the Flash plugin.
 	$.each(shipgraph, function(index, ShipGraph){
 		if (( (ShipGraph.api_sortno != 0) || (ShipGraph.api_id > 500) ) && !(blacklistID.indexOf(ShipGraph.api_id) >= 0)) {
-			$("#embeds").append(imglink+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf?VERSION="+ShipGraph.api_version+"\">");
+			$embed.append(imglink+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf?VERSION="+ShipGraph.api_version+"\">");
 		}
 	});
 }
@@ -105,8 +101,8 @@ function loadshipvoice() {
 			} else {
 				shipvoicelnk += LineNum+".mp3?version="+ShipGraph.api_version+"\">";
 			}
-			
-			$("#embeds").append(shipvoicelnk);
+			//append the link
+			$embed.append(shipvoicelnk);
 			
 			}
 		}
@@ -118,6 +114,6 @@ function loadinterface() {
 	uilinkage = defineInterface();
 	
 	$.each(uilinkage, function(index, DynamicAsset){
-		$("#embeds").append(imglink+ServerIP+DynamicAsset+"\">");
+		$embed.append(imglink+ServerIP+DynamicAsset+"\">");
 	});
 }
