@@ -10,6 +10,7 @@ function defineInterface(){
 	*/
 
 	//local variable for ui link (as string)
+	var mm_title = "2.3.7"
 	var mm_common = "2.6.8"
 	var mm_port = "2.6.6"
 	var rm_font = "2.3"
@@ -47,6 +48,7 @@ function defineInterface(){
 			"/kcs/resources/swf/sound_se.swf"+uiversion+rm_sound_se,
 			"/kcs/resources/swf/itemicons.swf"+uiversion+rm_itemicon,
 			"/kcs/resources/swf/stype.swf"+uiversion+rm_stype,
+			"/kcs/scenes/TitleMain.swf"+uiversion+mm_title,
 			"/kcs/scenes/RecordMain.swf"+uiversion+um_record,
 			"/kcs/scenes/AlbumMain.swf"+uiversion+um_album,
 			"/kcs/scenes/ItemlistMain.swf"+uiversion+um_itemlist,
