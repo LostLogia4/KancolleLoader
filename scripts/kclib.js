@@ -22,7 +22,7 @@ function loadfurnish() {
 	});
 }
 
-//load equipment icons via for loops
+//load equipment icons via "for loops" statement
 function loadequip() {
 			
 	for (EquipIDNum = 1; EquipIDNum <= CurrentMaxEquip; EquipIDNum++) {
@@ -39,6 +39,23 @@ function loadequip() {
 		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/remodal/"+EquipIDNum+".png\">");
 		$("#embeds").append(imglink+ServerIP+"/kcs/resources/image/slotitem/statustop_item/"+EquipIDNum+".png\">");
 		
+	}
+}
+
+//load titlecall audio calls via "for loops" statement
+function loadtitlecall() {
+			
+	for (CallIDNum = 1; CallIDNum <= 20; CallIDNum++) {
+	
+		//Zero paddings
+		if (CallIDNum <  10) CallIDNum = "0" + CallIDNum;
+		
+		//mp3 prefetch embeds
+		//Intentionally wrapped in img for silence.
+		$("#embeds").append(imglink+ServerIP+"/kcs/sound/titlecall/a/"+CallIDNum+".mp3\">");
+		if (CallIDNum <= 13) $("#embeds").append(imglink+ServerIP+"/kcs/sound/titlecall/b/"+CallIDNum+".mp3\">");
+		if (CallIDNum <= 11) $("#embeds").append(imglink+ServerIP+"/kcs/sound/titlecall/c/"+CallIDNum+".mp3\">");
+
 	}
 }
 
