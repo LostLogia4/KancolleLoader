@@ -88,7 +88,7 @@ function loadshipcg() {
 function loadshipvoice() {
 	//parse api_start2 master data to generate kanmusu CGs including version number
 	$.each(shipgraph, function(index, ShipGraph){
-		if ((ShipGraph.api_sortno != 0) && (ShipGraph.api_id < 500))) {
+		if ((ShipGraph.api_sortno != 0) && (ShipGraph.api_id < 500)) {
 			//Assign the link into a local variable
 			var shipvoicelnk = imglink+ServerIP+"/kcs/sound/kc"+ShipGraph.api_filename;
 			//loop for numbers
