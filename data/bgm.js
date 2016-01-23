@@ -51,6 +51,7 @@ var bgm = [
 	"swf/sound_b_bgm_30.swf?version=2.2",
 	"swf/sound_b_bgm_37.swf",
 	"swf/sound_b_bgm_38.swf",
+	"swf/sound_b_bgm_39.swf",
 	"swf/sound_b_bgm_40.swf",
 	"swf/sound_b_bgm_44.swf",
 	"swf/sound_b_bgm_46.swf",
