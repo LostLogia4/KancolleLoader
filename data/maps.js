@@ -1,13 +1,10 @@
 var worldmaps = [
 	
 	//eventmaps
-	/*
-	"33_01.swf?version=1.0.0",
-	"33_02.swf?version=1.0.0",
-	"33_03.swf?version=1.0.0",
-	"33_04.swf?version=1.0.0",
-	*/
-	
+	"gmlbign_zjwmq.swf",
+	"fgyvwqymk_ekn.swf",
+	"fwy_wlrdttcoc.swf",
+
 	//world maps
 	"01_01.swf?version=1.0.0",
 	"01_02.swf?version=1.0.0",
