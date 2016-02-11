@@ -12,7 +12,7 @@ function defineInterface(){
 	//local variable for ui link (as string)
 	var mm_title = "2.3.7"
 	var mm_common = "2.7"
-	var mm_port = "2.7"
+	var mm_port = "2.7.0.1"
 	var rm_font = "2.3"
 	var rm_icon = "2.5"
 	var rm_sound_bgm = "2.1.7"
