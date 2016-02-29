@@ -31,7 +31,7 @@ function defineInterface(){
 	var lm_repair = "2.3.5"
 	var lm_arsenal = "2.6.0"
 	var lm_sally = "2.7.1"
-	var mm_battle = "2.7.1"
+	var mm_battle = "2.7.1.1"
 	var mm_battleresult = "2.7.1"
 	var xm_wedding = "2.0.10"
 	var xm_revamp = "2.7.1"
@@ -62,7 +62,7 @@ function defineInterface(){
 			"/kcs/scenes/ArsenalMain.swf"+uiversion+lm_arsenal,
 			"/kcs/scenes/SallyMain.swf"+uiversion+lm_sally,
 			"/kcs/scenes/BattleMain.swf"+uiversion+mm_battle,
-			"/kcs/scenes/BattleMain.swf"+uiversion+mm_battleresult,
+			"/kcs/scenes/BattleResultMain.swf"+uiversion+mm_battleresult,
 			"/kcs/scenes/WeddingMain.swf"+uiversion+xm_wedding,
 			"/kcs/scenes/RevampMain.swf"+uiversion+xm_revamp
 			];
