@@ -1,9 +1,6 @@
 var worldmaps = [
 	
 	//eventmaps
-	"gmlbign_zjwmq.swf",
-	"fgyvwqymk_ekn.swf",
-	"fwy_wlrdttcoc.swf",
 
 	//world maps
 	"01_01.swf",
