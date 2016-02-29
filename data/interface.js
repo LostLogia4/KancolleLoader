@@ -62,7 +62,7 @@ function defineInterface(){
 			"/kcs/scenes/ArsenalMain.swf"+uiversion+lm_arsenal,
 			"/kcs/scenes/SallyMain.swf"+uiversion+lm_sally,
 			"/kcs/scenes/BattleMain.swf"+uiversion+mm_battle,
-			"/kcs/scenes/BattleMain.swf"+uiversion+mm_battleresult,
+			"/kcs/scenes/BattleResultMain.swf"+uiversion+mm_battleresult,
 			"/kcs/scenes/WeddingMain.swf"+uiversion+xm_wedding,
 			"/kcs/scenes/RevampMain.swf"+uiversion+xm_revamp
 			];
