@@ -30,10 +30,6 @@ var bgm = [
 	"bgm_p/227f.swf",
 	
 	//Event BGM theme
-	"bgm_p/906y.swf",
-	"swf/sound_b_bgm_58.swf",
-	"swf/sound_b_bgm_59.swf",
-	"swf/sound_b_bgm_60.swf",
 	
 	//Battle BGM theme
 	"swf/sound_b_bgm_1.swf?version=2.0.6",
@@ -68,6 +64,7 @@ var bgm = [
 	"bgm_p/903y.swf",
 	"bgm_p/904w.swf",
 	"bgm_p/905w.swf",
+	"bgm_p/906y.swf",
 	"swf/sound_b_bgm_51.swf",
 	"swf/sound_b_bgm_52.swf",
 	"swf/sound_b_bgm_53.swf",
@@ -75,5 +72,7 @@ var bgm = [
 	"swf/sound_b_bgm_55.swf",
 	"swf/sound_b_bgm_56.swf",
 	"swf/sound_b_bgm_57.swf",
-	"swf/sound_b_bgm_58.swf"
+	"swf/sound_b_bgm_58.swf",
+	"swf/sound_b_bgm_59.swf",
+	"swf/sound_b_bgm_60.swf",
 	*/
