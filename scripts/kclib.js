@@ -80,11 +80,20 @@ function loadshipcg() {
 	//Intentionally wrapped in img to avoid crashing the Flash plugin.
 	$.each(shipgraph, function(index, ShipGraph){
 		if (( (ShipGraph.api_sortno != 0) || (ShipGraph.api_id > 500) ) && !(blacklistID.indexOf(ShipGraph.api_id) >= 0)) {
-			$embed.append(imglink+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf?VERSION="+ShipGraph.api_version+"\">");
-		}
+			
+			/*
+			experimental function to handle version 1 entries.
+			var shipcglnk imglink+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf";
+			if (ShipGraph.api_version != 1) shipcglnk += "VERSION="+ShipGraph.api_version;
+			
+			$embed.append(shipcglnk+"\">");
+			*/
+
+ -			$embed.append(imglink+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf?VERSION="+ShipGraph.api_version+"\">"); 		}
 	});
 }
 
+/*
 function loadshipvoice() {
 	//parse api_start2 master data to generate kanmusu CGs including version number
 	$.each(shipgraph, function(index, ShipGraph){
@@ -108,6 +117,7 @@ function loadshipvoice() {
 		}
 	});
 }
+*/
 
 //calls Interface.js local function before generating interface links
 function loadinterface() {
