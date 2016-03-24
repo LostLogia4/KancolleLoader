@@ -49,6 +49,12 @@ function loadtitlecall() {
 			
 	for (CallIDNum = 1; CallIDNum <= 20; CallIDNum++) {
 	
+		//For in-game voices that doesn't need padding
+		/*
+		if (CallIDNum <  3) $embed.append(imglink+ServerIP+"/kcs/sound/kc9999/"+CallIDNum+".mp3\">");
+		if (CallIDNum <  8) $embed.append(imglink+ServerIP+"/kcs/sound/kc9999/1"+CallIDNum+".mp3\">");
+		*/
+		
 		//Zero paddings
 		if (CallIDNum <  10) CallIDNum = "0" + CallIDNum;
 		
@@ -57,7 +63,10 @@ function loadtitlecall() {
 		$embed.append(imglink+ServerIP+"/kcs/sound/titlecall/a/"+CallIDNum+".mp3\">");
 		if (CallIDNum <= 13) $embed.append(imglink+ServerIP+"/kcs/sound/titlecall/b/"+CallIDNum+".mp3\">");
 		if (CallIDNum <= 11) $embed.append(imglink+ServerIP+"/kcs/sound/titlecall/c/"+CallIDNum+".mp3\">");
-
+		/*
+		if (CallIDNum <= 18) $embed.append(imglink+ServerIP+"/kcs/sound/kc9999/3"+CallIDNum+".mp3\">");
+		if (CallIDNum <  10) $embed.append(imglink+ServerIP+"/kcs/sound/kc9999/4"+CallIDNum+".mp3\">");
+		*/
 	}
 }
 
@@ -80,34 +89,24 @@ function loadshipcg() {
 	//Intentionally wrapped in img to avoid crashing the Flash plugin.
 	$.each(shipgraph, function(index, ShipGraph){
 		if (( (ShipGraph.api_sortno != 0) || (ShipGraph.api_id > 500) ) && !(blacklistID.indexOf(ShipGraph.api_id) >= 0)) {
-			$embed.append(imglink+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf?VERSION="+ShipGraph.api_version+"\">");
-		}
+			
+			/*
+			experimental function to handle festival CGs.
+			var shipcglnk imglink+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf";
+			if (ShipGraph.api_id < 900) shipcglnk += "VERSION="+ShipGraph.api_version;
+			
+			$embed.append(shipcglnk+"\">");
+			*/
+
+ -			$embed.append(imglink+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf?VERSION="+ShipGraph.api_version+"\">"); 		}
 	});
 }
 
+/*
 function loadshipvoice() {
-	//parse api_start2 master data to generate kanmusu CGs including version number
-	$.each(shipgraph, function(index, ShipGraph){
-		if ((ShipGraph.api_sortno != 0) && (ShipGraph.api_id < 500)) {
-			//Assign the link into a local variable
-			var shipvoicelnk = imglink+ServerIP+"/kcs/sound/kc"+ShipGraph.api_filename;
-			//loop for numbers
-			for (LineNum = 0; LineNum <= 28; LineNum++) {
-			//skip line 22
-			if (LineNum == 22) LineNum++;
-			//append the remaining parameters
-			if (ShipGraph.api_version == 1) {
-				shipvoicelnk += LineNum+".mp3\">";
-			} else {
-				shipvoicelnk += LineNum+".mp3?version="+ShipGraph.api_version+"\">";
-			}
-			//append the link
-			$embed.append(shipvoicelnk);
-			
-			}
-		}
-	});
+	//pending reconstruction
 }
+*/
 
 //calls Interface.js local function before generating interface links
 function loadinterface() {
