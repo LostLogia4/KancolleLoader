@@ -98,7 +98,7 @@ function loadshipcg() {
 			$embed.append(shipcglnk+"\">");
 			*/
 
- -			$embed.append(imglink+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf?VERSION="+ShipGraph.api_version+"\">"); 		}
+ -			$embed.append(imglink+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf?VERSION="+ShipGraph.api_version[0]+"\">"); 		}
 	});
 }
 
