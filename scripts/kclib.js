@@ -3,6 +3,15 @@ var imglink = "<img width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=
 //Optimization of embeds div query
 var $embed = $("#embeds");
 
+//calls Interface.js local function before generating interface links
+function loadinterface() {
+	uilinkage = defineInterface();
+	
+	$.each(uilinkage, function(index, DynamicAsset){
+		$embed.append(imglink+ServerIP+DynamicAsset+"\">");
+	});
+}
+
 //load static info from bgm.js
 function loadbgm() {
 	$.each(bgm, function(index, StaticAsset){
@@ -49,24 +58,20 @@ function loadtitlecall() {
 			
 	for (CallIDNum = 1; CallIDNum <= 20; CallIDNum++) {
 	
+		//mp3 prefetch embeds
 		//For in-game voices that doesn't need padding
-		/*
 		if (CallIDNum <  3) $embed.append(imglink+ServerIP+"/kcs/sound/kc9999/"+CallIDNum+".mp3\">");
 		if (CallIDNum <  8) $embed.append(imglink+ServerIP+"/kcs/sound/kc9999/1"+CallIDNum+".mp3\">");
-		*/
 		
 		//Zero paddings
 		if (CallIDNum <  10) CallIDNum = "0" + CallIDNum;
 		
-		//mp3 prefetch embeds
 		//Intentionally wrapped in img for silence.
 		$embed.append(imglink+ServerIP+"/kcs/sound/titlecall/a/"+CallIDNum+".mp3\">");
 		if (CallIDNum <= 13) $embed.append(imglink+ServerIP+"/kcs/sound/titlecall/b/"+CallIDNum+".mp3\">");
 		if (CallIDNum <= 11) $embed.append(imglink+ServerIP+"/kcs/sound/titlecall/c/"+CallIDNum+".mp3\">");
-		/*
 		if (CallIDNum <= 18) $embed.append(imglink+ServerIP+"/kcs/sound/kc9999/3"+CallIDNum+".mp3\">");
 		if (CallIDNum <  10) $embed.append(imglink+ServerIP+"/kcs/sound/kc9999/4"+CallIDNum+".mp3\">");
-		*/
 	}
 }
 
@@ -90,15 +95,12 @@ function loadshipcg() {
 	$.each(shipgraph, function(index, ShipGraph){
 		if (( (ShipGraph.api_sortno != 0) || (ShipGraph.api_id > 500) ) && !(blacklistID.indexOf(ShipGraph.api_id) >= 0)) {
 			
-			/*
-			experimental function to handle festival CGs.
-			var shipcglnk imglink+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf";
-			if (ShipGraph.api_id < 900) shipcglnk += "VERSION="+ShipGraph.api_version;
+			//declare shipcg link as partial code, inject version params if higher than 1.
+			var shipcglnk = imglink+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf";
+			if (ShipGraph.api_version[0] > 1) shipcglnk += "VERSION="+ShipGraph.api_version[0];
 			
 			$embed.append(shipcglnk+"\">");
-			*/
-
- -			$embed.append(imglink+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf?VERSION="+ShipGraph.api_version[0]+"\">"); 		}
+			}
 	});
 }
 
@@ -107,12 +109,3 @@ function loadshipvoice() {
 	//pending reconstruction
 }
 */
-
-//calls Interface.js local function before generating interface links
-function loadinterface() {
-	uilinkage = defineInterface();
-	
-	$.each(uilinkage, function(index, DynamicAsset){
-		$embed.append(imglink+ServerIP+DynamicAsset+"\">");
-	});
-}
