@@ -22,11 +22,12 @@
 	border:1px solid #333;
 	margin:0px auto 5px;
 }
-	#progress-bar {
-		width:0px;
-		height:10px;
-		background:#ace;
-	}
+
+#progress-bar {
+	width:0px;
+	height:10px;
+	background:#ace;
+}
 
 #progress-text {
 	width:300px;
@@ -36,11 +37,15 @@
 	margin:0px 0px 10px 0px;
 }
 
-#embeds {
-	/*visibility:hidden;*/
+/*
+
+@keyframes loading {
+	0%   {background:#555;}
+	100% {background:#22C;}
 }
 
-/*#console {
+
+#console {
 	width:600px;
 	height:400px;
 	margin:0px auto;
