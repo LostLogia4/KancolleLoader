@@ -49,6 +49,7 @@ function loadvlinks() {
 		
 		$("#progress-title").text(ServerData.name);     //display the server name
 		$("#progress-text").text("Loading...");         //replace initializing with loading
+		//$("#progress-box").css("animation","loading 0.75s infinite ease alternate");
 		
 		loadbgm();
 		loadmap();
