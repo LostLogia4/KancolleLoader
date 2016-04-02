@@ -60,4 +60,10 @@ function loadvlinks() {
 		
 	});
 	
+	//completeion message after loading, regardless of success or failure.
+	$(window).bind("load", function() {
+		$("#progress-text").text("Loading complete");
+		$("#progress-box").css("background-color","#4DD9D0");
+	});
+	
 })();
