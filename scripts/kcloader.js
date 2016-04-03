@@ -49,8 +49,8 @@ function loadvlinks() {
 		
 		$("#progress-title").text(ServerData.name);     //display the server name
 		$("#progress-text").text("Loading...");         //replace initializing with loading
-		//$("#progress-box").css("animation","loading 0.75s infinite ease alternate");
-		
+		$("#progress-box").css("background-color","#00BFFF");
+
 		loadbgm();
 		loadmap();
 		loadfurnish();
@@ -62,9 +62,11 @@ function loadvlinks() {
 	});
 	
 	//completeion message after loading, regardless of success or failure.
+	//Doesn't work for event-handler generated DOMs.
 	$(window).bind("load", function() {
-		$("#progress-text").text("Loading complete");
-		$("#progress-box").css("background-color","#4DD9D0");
+		if (currentDate < expiryDate) $("#progress-text").text("Loading complete");
+		$("#progress-box").css("background-color","#50C878");
+
 	});
 	
 })();
