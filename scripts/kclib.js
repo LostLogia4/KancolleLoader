@@ -47,7 +47,7 @@ function loadequip() {
 		if (EquipIDNum != 42) $embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_character/"+EquipIDNum+".png\">");
 		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_on/"+EquipIDNum+".png\">");
 		if (EquipIDNum != 42) $embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_up/"+EquipIDNum+".png\">");
-		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/remodal/"+EquipIDNum+".png\">");
+		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/remodal/"+EquipIvDNum+".png\">");
 		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/statustop_item/"+EquipIDNum+".png\">");
 		
 	}
@@ -97,7 +97,7 @@ function loadshipcg() {
 			
 			//declare shipcg link as partial code, inject version params if higher than 1.
 			var shipcglnk = imglink+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf";
-			if (ShipGraph.api_version[0] > 1) shipcglnk += "VERSION="+ShipGraph.api_version[0];
+			if (ShipGraph.api_version[0] > 1) shipcglnk += "?VERSION="+ShipGraph.api_version[0];
 			
 			$embed.append(shipcglnk+"\">");
 			}
