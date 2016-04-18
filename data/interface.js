@@ -13,7 +13,7 @@ function defineInterface(){
 	var mm_title = "2.7.3"
 	var mm_tutorial = "2.0.0"
 	var mm_common = "2.7.2.1"
-	var mm_port = "2.7.3.1"
+	var mm_port = "2.7.3.3"
 	var rm_font = "2.3"
 	var rm_icon = "2.7.2.1"
 	var rm_sound_bgm = "2.1.7"
