@@ -1,4 +1,4 @@
-var shipgraph =         "api_mst_shipgraph": [{
+var shipgraph = [{
             "api_id": 1,
             "api_sortno": 31,
             "api_filename": "snohitatusbk",
