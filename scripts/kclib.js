@@ -33,32 +33,37 @@ function loadfurnish() {
 	});
 }
 
+//Function for loading equipments
+function loadequiplink(eID) {
+	
+	//Zero paddings
+	eID.toString();
+	if (eID < 100) eID = "0" + eID;
+	if (eID <  10) eID = "0" + eID;
+	
+	$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/card/"+eID+".png\">");
+	$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_on/"+eID+".png\">");
+	$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/remodal/"+eID+".png\">");
+	$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/statustop_item/"+eID+".png\">");
+	
+	if (eID !== "042") {
+		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_character/"+eID+".png\">");
+		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_up/"+eID+".png\">");
+	}
+}
+	
 //load equipment icons via "for loops" statement
 function loadequip() {
 			
 	for (EquipIDNum = 1; EquipIDNum < EquipIndex[0]; EquipIDNum++) {
 	
-		//Zero paddings
-		if (EquipIDNum < 100) EquipIDNum = "0" + EquipIDNum;
-		if (EquipIDNum <  10) EquipIDNum = "0" + EquipIDNum;
 
-		//Image prefetch embeds (with damecon exception)
-		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/card/"+EquipIDNum+".png\">");
-		if (EquipIDNum != 42) $embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_character/"+EquipIDNum+".png\">");
-		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_on/"+EquipIDNum+".png\">");
-		if (EquipIDNum != 42) $embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_up/"+EquipIDNum+".png\">");
-		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/remodal/"+EquipIDNum+".png\">");
-		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/statustop_item/"+EquipIDNum+".png\">");
-		
+		//Image prefetch embed function call (with damecon exception)
+		loadequiplink(EquipIDNum);
 	}
 	
 	$.each(EquipIndex, function(index, EquipIDNum){
-		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/card/"+EquipIDNum+".png\">");
-		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_character/"+EquipIDNum+".png\">");
-		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_on/"+EquipIDNum+".png\">");
-		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_up/"+EquipIDNum+".png\">");
-		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/remodal/"+EquipIDNum+".png\">");
-		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/statustop_item/"+EquipIDNum+".png\">");
+		loadequiplink(EquipIDNum);
 	});
 	
 }
