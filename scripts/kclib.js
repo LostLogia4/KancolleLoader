@@ -36,7 +36,7 @@ function loadfurnish() {
 //load equipment icons via "for loops" statement
 function loadequip() {
 			
-	for (EquipIDNum = 1; EquipIDNum <= CurrentMaxEquip; EquipIDNum++) {
+	for (EquipIDNum = 1; EquipIDNum < EquipIndex[0]; EquipIDNum++) {
 	
 		//Zero paddings
 		if (EquipIDNum < 100) EquipIDNum = "0" + EquipIDNum;
@@ -51,6 +51,16 @@ function loadequip() {
 		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/statustop_item/"+EquipIDNum+".png\">");
 		
 	}
+	
+	$.each(EquipIndex, function(index, EquipIDNum){
+		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/card/"+EquipIDNum+".png\">");
+		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_character/"+EquipIDNum+".png\">");
+		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_on/"+EquipIDNum+".png\">");
+		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/item_up/"+EquipIDNum+".png\">");
+		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/remodal/"+EquipIDNum+".png\">");
+		$embed.append(imglink+ServerIP+"/kcs/resources/image/slotitem/statustop_item/"+EquipIDNum+".png\">");
+	});
+	
 }
 
 //load titlecall audio calls via "for loops" statement
