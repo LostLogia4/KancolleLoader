@@ -71,7 +71,7 @@ function loadequip() {
 //load titlecall audio calls via "for loops" statement
 function loadtitlecall() {
 			
-	for (CallIDNum = 1; CallIDNum <= 20; CallIDNum++) {
+	for (CallIDNum = 1; CallIDNum <= 26; CallIDNum++) {
 	
 		//mp3 prefetch embeds
 		//For in-game voices that doesn't need padding
@@ -82,11 +82,11 @@ function loadtitlecall() {
 		if (CallIDNum <  10) CallIDNum = "0" + CallIDNum;
 		
 		//Intentionally wrapped in img for silence.
-		$embed.append(imglink+ServerIP+"/kcs/sound/titlecall/a/"+CallIDNum+".mp3\">");
+		if (CallIDNum <= 20) $embed.append(imglink+ServerIP+"/kcs/sound/titlecall/a/"+CallIDNum+".mp3\">");
 		if (CallIDNum <= 13) $embed.append(imglink+ServerIP+"/kcs/sound/titlecall/b/"+CallIDNum+".mp3\">");
 		if (CallIDNum <= 11) $embed.append(imglink+ServerIP+"/kcs/sound/titlecall/c/"+CallIDNum+".mp3\">");
 		if (CallIDNum <= 18) $embed.append(imglink+ServerIP+"/kcs/sound/kc9999/3"+CallIDNum+".mp3\">");
-		if (CallIDNum <  10) $embed.append(imglink+ServerIP+"/kcs/sound/kc9999/4"+CallIDNum+".mp3\">");
+		$embed.append(imglink+ServerIP+"/kcs/sound/kc9999/4"+CallIDNum+".mp3\">");
 	}
 }
 
