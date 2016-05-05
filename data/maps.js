@@ -2,6 +2,8 @@ var worldmaps = [
 	
 	//eventmaps
 	"lddsvnlihrvtnpjkwqcelxpsmylpcqcyifty.swf",
+	"ykiginprdwshxaxvsfqfsglcgqbmuwsesjsj.swf",
+	"wxjwlfrhgcklfdsibozycoxusitdrbcvspjm.swf",
 
 	//world maps
 	"01_01.swf",
