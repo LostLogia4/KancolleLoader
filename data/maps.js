@@ -4,6 +4,9 @@ var worldmaps = [
 	"lddsvnlihrvtnpjkwqcelxpsmylpcqcyifty.swf",
 	"ykiginprdwshxaxvsfqfsglcgqbmuwsesjsj.swf",
 	"wxjwlfrhgcklfdsibozycoxusitdrbcvspjm.swf",
+	"gtghlytvrrnwwlgclowhlxxdowjcyhsslylg.swf",
+	"ffeslxuunebocfbhyurhqvkuadvbdpchpuun.swf",
+	"ttiowoxbvxkzupqukiogqbferupdilhnbuss.swf",
 
 	//world maps
 	"01_01.swf",
