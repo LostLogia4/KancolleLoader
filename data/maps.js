@@ -8,7 +8,6 @@ var worldmaps = [
 	"ttiowoxbvxkzupqukiogqbferupdilhnbuss.swf",
 	"ffeslxuunebocfbhyurhqvkuadvbdpchpuun.swf",
 	"ajbgoywibmolclvnnmqkgmpcymosnellkojv.swf",
-	// [51,"dfrmfm_jvschh"],[81,""]]  //Area 51?
 
 	//world maps
 	"01_01.swf",
