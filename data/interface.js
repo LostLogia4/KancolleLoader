@@ -10,6 +10,7 @@ function defineInterface(){
 	*/
 
 	//local variable for ui link (as string)
+	var mm_core = "yfrcebhkfeme"
 	var mm_title = "2.7.3"
 	var mm_tutorial = "2.0.0"
 	var mm_common = "2.8"
@@ -27,12 +28,12 @@ function defineInterface(){
 	var um_duty = "2.7.3"
 	var lm_organize = "2.7.2"
 	var lm_supply = "2.6.5"
-	var lm_remodel = "2.7.4"
+	var lm_remodel = "2.8.3.6"
 	var lm_repair = "2.3.5"
 	var lm_arsenal = "2.8"
 	var lm_sally = "2.8.3.5"
-	var mm_battle = "2.8.3.3"
-	var mm_battleresult = "2.8.2"
+	var mm_battle = "2.8.3.6"
+	var mm_battleresult = "2.8.3.6"
 	var xm_wedding = "2.0.10"
 	var xm_revamp = "2.7.2.1"
 	
@@ -41,6 +42,7 @@ function defineInterface(){
 	
 	//generated links
 	var uilinkgen = [
+			"/kcs/Core.swf"+uiversion+mm_core,
 			"/kcs/PortMain.swf"+uiversion+mm_port,
 			"/kcs/resources/swf/commonAssets.swf"+uiversion+mm_common,
 			"/kcs/resources/swf/font.swf"+uiversion+rm_font,
