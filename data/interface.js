@@ -60,7 +60,7 @@ function defineInterface(){
 			"/kcs/scenes/OrganizeMain.swf"+uiversion+lm_organize,
 			"/kcs/scenes/SupplyMain.swf"+uiversion+lm_supply,
 			"/kcs/scenes/RemodelMain.swf"+uiversion+lm_remodel,
-			"/kcs/scenes/RemodelMain.swf"+uiversion+lm_repair,
+			"/kcs/scenes/RepairMain.swf"+uiversion+lm_repair,
 			"/kcs/scenes/ArsenalMain.swf"+uiversion+lm_arsenal,
 			"/kcs/scenes/SallyMain.swf"+uiversion+lm_sally,
 			"/kcs/scenes/BattleMain.swf"+uiversion+mm_battle,
