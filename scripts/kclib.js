@@ -28,8 +28,29 @@ function loadmap() {
 
 //load static info from furniture.js
 function loadfurnish() {
+	
+	//Commonly used link
+	var FurnitureLink = imglink+ServerIP+"/kcs/resources/image/furniture/";
+	
+	//Append static assets
 	$.each(furniture, function(index, StaticAsset){
-		$embed.append(imglink+ServerIP+"/kcs/resources/image/furniture/"+StaticAsset+"\">");
+		$embed.append(FurnitureLink+StaticAsset+"\">");
+	});
+
+	//Append dynamic assets
+	$.each(furnituregraph, function(index, DynamicAsset){
+		
+		//Switch case for determining furniture type
+		switch (DynamicAsset.api_type) {
+			case 0: FurnitureType = "floor/";  break;
+			case 1: FurnitureType = "wall/";   break;
+			case 2: FurnitureType = "window/"; break;
+			case 3: FurnitureType = "object/"; break;
+			case 4: FurnitureType = "chest/";  break;
+			case 5: FurnitureType = "desk/";   break;
+		}
+		
+		$embed.append(FurnitureLink+FurnitureType+DynamicAsset.api_filename+".swf?VERSION="+DynamicAsset.api_version+"\">");
 	});
 }
 
