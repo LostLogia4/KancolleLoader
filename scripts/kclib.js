@@ -42,12 +42,12 @@ function loadfurnish() {
 		
 		//Switch case for determining furniture type
 		switch (DynamicAsset.api_type) {
-			case 0: FurnitureType = "floor/";  break;
-			case 1: FurnitureType = "wall/";   break;
+			case 0: FurnitureType =  "floor/"; break;
+			case 1: FurnitureType =   "wall/"; break;
 			case 2: FurnitureType = "window/"; break;
 			case 3: FurnitureType = "object/"; break;
-			case 4: FurnitureType = "chest/";  break;
-			case 5: FurnitureType = "desk/";   break;
+			case 4: FurnitureType =  "chest/"; break;
+			case 5: FurnitureType =   "desk/"; break;
 		}
 		
 		$embed.append(FurnitureLink+FurnitureType+DynamicAsset.api_filename+".swf?VERSION="+DynamicAsset.api_version+"\">");
