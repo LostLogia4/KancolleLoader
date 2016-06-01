@@ -200,7 +200,7 @@ var furnituregraph = [{
             "api_type": 2,
             "api_no": 35,
             "api_filename": "036",
-            "api_version": "15"
+            "api_version": "16"
         }, {
             "api_id": 235,
             "api_type": 3,
@@ -308,5 +308,11 @@ var furnituregraph = [{
             "api_type": 3,
             "api_no": 61,
             "api_filename": "062",
+            "api_version": "1"
+        }, {
+            "api_id": 297,
+            "api_type": 0,
+            "api_no": 41,
+            "api_filename": "042",
             "api_version": "1"
         }];
