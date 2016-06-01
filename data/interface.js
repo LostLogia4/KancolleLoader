@@ -10,7 +10,7 @@ function defineInterface(){
 	*/
 
 	//local variable for ui link (as string)
-	var mm_core = "yfrcebhkfeme"
+	var mm_core = "yfrcebhkfemz"
 	var mm_title = "2.7.3"
 	var mm_tutorial = "2.0.0"
 	var mm_common = "2.8.4"
