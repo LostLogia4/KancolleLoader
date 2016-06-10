@@ -207,7 +207,7 @@ var shipgraph = [{
 			"api_id": 42,
 			"api_sortno": 79,
 			"api_filename": "ahztpphnuvco",
-			"api_version": [21]
+			"api_version": [22]
 		}, {
 			"api_id": 43,
 			"api_sortno": 80,
@@ -347,7 +347,7 @@ var shipgraph = [{
 			"api_id": 70,
 			"api_sortno": 51,
 			"api_filename": "lcmobkdeizph",
-			"api_version": [5]
+			"api_version": [6]
 		}, {
 			"api_id": 71,
 			"api_sortno": 63,
@@ -362,7 +362,7 @@ var shipgraph = [{
 			"api_id": 73,
 			"api_sortno": 101,
 			"api_filename": "ethdbrvnuznc",
-			"api_version": [6]
+			"api_version": [7]
 		}, {
 			"api_id": 74,
 			"api_sortno": 94,
@@ -507,42 +507,42 @@ var shipgraph = [{
 			"api_id": 102,
 			"api_sortno": 49,
 			"api_filename": "dkmxevqgbxmr",
-			"api_version": [9]
+			"api_version": [10]
 		}, {
 			"api_id": 103,
 			"api_sortno": 50,
 			"api_filename": "cayfwlehtvgj",
-			"api_version": [9]
+			"api_version": [10]
 		}, {
 			"api_id": 104,
 			"api_sortno": 95,
 			"api_filename": "wvkpfygaipjq",
-			"api_version": [10]
+			"api_version": [11]
 		}, {
 			"api_id": 105,
 			"api_sortno": 96,
 			"api_filename": "tsfbgfyeqxhg",
-			"api_version": [12]
+			"api_version": [13]
 		}, {
 			"api_id": 106,
 			"api_sortno": 99,
 			"api_filename": "ttkeodhvrmog",
-			"api_version": [10]
+			"api_version": [11]
 		}, {
 			"api_id": 107,
 			"api_sortno": 100,
 			"api_filename": "agybvcshxbpm",
-			"api_version": [12]
+			"api_version": [13]
 		}, {
 			"api_id": 108,
 			"api_sortno": 104,
 			"api_filename": "wlvvcpnulyer",
-			"api_version": [10]
+			"api_version": [11]
 		}, {
 			"api_id": 109,
 			"api_sortno": 105,
 			"api_filename": "rsmzverhwskc",
-			"api_version": [11]
+			"api_version": [12]
 		}, {
 			"api_id": 110,
 			"api_sortno": 106,
@@ -572,7 +572,7 @@ var shipgraph = [{
 			"api_id": 115,
 			"api_sortno": 111,
 			"api_filename": "hieimxbtcqrt",
-			"api_version": [15]
+			"api_version": [16]
 		}, {
 			"api_id": 116,
 			"api_sortno": 112,
@@ -1202,7 +1202,7 @@ var shipgraph = [{
 			"api_id": 242,
 			"api_sortno": 1342,
 			"api_filename": "xcbmsjqrostq",
-			"api_version": [22]
+			"api_version": [23]
 		}, {
 			"api_id": 243,
 			"api_sortno": 1343,
@@ -1237,7 +1237,7 @@ var shipgraph = [{
 			"api_id": 249,
 			"api_sortno": 1349,
 			"api_filename": "ngcxxfxovpmn",
-			"api_version": [11]
+			"api_version": [12]
 		}, {
 			"api_id": 250,
 			"api_sortno": 1350,
@@ -1402,7 +1402,7 @@ var shipgraph = [{
 			"api_id": 282,
 			"api_sortno": 1382,
 			"api_filename": "numjsnomjspr",
-			"api_version": [17]
+			"api_version": [18]
 		}, {
 			"api_id": 283,
 			"api_sortno": 1383,
@@ -1447,17 +1447,17 @@ var shipgraph = [{
 			"api_id": 291,
 			"api_sortno": 1391,
 			"api_filename": "ufcqfujavyyg",
-			"api_version": [9]
+			"api_version": [10]
 		}, {
 			"api_id": 292,
 			"api_sortno": 1392,
 			"api_filename": "hgitzuyaysvw",
-			"api_version": [9]
+			"api_version": [10]
 		}, {
 			"api_id": 293,
 			"api_sortno": 1393,
 			"api_filename": "hfhcjjdyqyzn",
-			"api_version": [15]
+			"api_version": [16]
 		}, {
 			"api_id": 294,
 			"api_sortno": 1394,
@@ -1472,12 +1472,12 @@ var shipgraph = [{
 			"api_id": 296,
 			"api_sortno": 121,
 			"api_filename": "kavryopoywwx",
-			"api_version": [10]
+			"api_version": [11]
 		}, {
 			"api_id": 297,
 			"api_sortno": 122,
 			"api_filename": "jhefpwucyxiq",
-			"api_version": [10]
+			"api_version": [11]
 		}, {
 			"api_id": 300,
 			"api_sortno": 1396,
@@ -1707,7 +1707,7 @@ var shipgraph = [{
 			"api_id": 345,
 			"api_sortno": 1425,
 			"api_filename": "ydsbnsiogwij",
-			"api_version": [13]
+			"api_version": [14]
 		}, {
 			"api_id": 346,
 			"api_sortno": 1426,
