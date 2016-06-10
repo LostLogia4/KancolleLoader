@@ -10,11 +10,11 @@ function defineInterface(){
 	*/
 
 	//local variable for ui link (as string)
-	var mm_core = "yfrcebhkfemz"
+	var mm_core = "rqxbjmdizgzp"
 	var mm_title = "2.7.3"
 	var mm_tutorial = "2.0.0"
 	var mm_common = "2.8.4"
-	var mm_port = "2.7.3.3"
+	var mm_port = "2.8.5"
 	var rm_font = "2.3"
 	var rm_icon = "2.8"
 	var rm_sound_bgm = "2.1.7"
@@ -25,7 +25,7 @@ function defineInterface(){
 	var um_album = "2.8.2"
 	var um_itemlist = "2.7.3"
 	var um_interior = "2.3"
-	var um_duty = "2.7.3"
+	var um_duty = "2.8.5"
 	var lm_organize = "2.7.2"
 	var lm_supply = "2.6.5"
 	var lm_remodel = "2.8.4"
