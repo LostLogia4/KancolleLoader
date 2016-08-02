@@ -10,18 +10,18 @@ function defineInterface(){
 	*/
 
 	//local variable for ui link (as string)
-	var mm_core = "uhmnbrdfrxjx"
+	var mm_core = "scronrcptbfd"
 	var mm_title = "2.7.3"
-	var mm_tutorial = "2.0.0"
+	var mm_tutorial = "2.8.8"
 	var mm_common = "2.8.7"
-	var mm_port = "2.8.5"
+	var mm_port = "2.8.8"
 	var rm_font = "2.3"
 	var rm_icon = "2.8"
 	var rm_sound_bgm = "2.1.7"
 	var rm_sound_se = "2.8"
 	var rm_itemicon = "2.6.9"
 	var rm_stype = "2.6.4"
-	var um_record = "2.8.7"
+	var um_record = "2.8.8"
 	var um_album = "2.8.2"
 	var um_itemlist = "2.8.7"
 	var um_interior = "2.3"
