@@ -1,6 +1,12 @@
 var worldmaps = [
 	
 	//eventmaps
+	"zagktsaidxm_aakcgeuydhg_zhebudgs.swf",
+	"dtsudwjbtccfcvpqsjqrxncytfpuxdcx.swf",
+	"f_czaskgfdbhrr_yqohnbbyyajghkeut.swf",
+	"yfsktnrbaildccbafgkfcjixvnndugfz.swf",
+	
+	//pasteventmaps
 	/*
 	"lddsvnlihrvtnpjkwqcelxpsmylpcqcyifty.swf",
 	"gtghlytvrrnwwlgclowhlxxdowjcyhsslylg.swf",
