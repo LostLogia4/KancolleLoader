@@ -37,12 +37,15 @@ var bgm = [
 	//Event BGM theme
 	"bgm_p/907c.swf",
 	"bgm_p/908i.swf",
+	"bgm_p/909q.swf",
 	"swf/sound_b_bgm_61.swf",
 	"swf/sound_b_bgm_62.swf",
 	"swf/sound_b_bgm_63.swf",
 	"swf/sound_b_bgm_64.swf",
 	"swf/sound_b_bgm_67.swf",
 	"swf/sound_b_bgm_68.swf",
+	"swf/sound_b_bgm_70.swf",
+	"swf/sound_b_bgm_71.swf",
 	
 	//Battle BGM theme
 	"swf/sound_b_bgm_1.swf?version=2.0.6",
