@@ -32,7 +32,7 @@ function defineInterface(){
 	var lm_repair = "2.8.6"
 	var lm_arsenal = "2.8.6.1"
 	var lm_sally = "2.9.1"
-	var mm_battle = "2.9.1"
+	var mm_battle = "2.9.1.1"
 	var mm_battleresult = "2.9.1"
 	var xm_wedding = "2.0.10"
 	var xm_revamp = "2.8.6"
