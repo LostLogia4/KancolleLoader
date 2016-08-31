@@ -1,5 +1,5 @@
 var $embed = $("#embeds");
-var mini = true;
+var mini = false;
 var endline = "<br>";
 
 function printshipgraph(atomize) {
