@@ -1,10 +1,6 @@
 var worldmaps = [
 	
 	//eventmaps
-	"zagktsaidxm_aakcgeuydhg_zhebudgs.swf",
-	"dtsudwjbtccfcvpqsjqrxncytfpuxdcx.swf",
-	"f_czaskgfdbhrr_yqohnbbyyajghkeut.swf",
-	"yfsktnrbaildccbafgkfcjixvnndugfz.swf",
 	
 	//pasteventmaps
 	/*
@@ -15,6 +11,10 @@ var worldmaps = [
 	"ttiowoxbvxkzupqukiogqbferupdilhnbuss.swf",
 	"ffeslxuunebocfbhyurhqvkuadvbdpchpuun.swf",
 	"ajbgoywibmolclvnnmqkgmpcymosnellkojv.swf",
+	"zagktsaidxm_aakcgeuydhg_zhebudgs.swf",
+	"dtsudwjbtccfcvpqsjqrxncytfpuxdcx.swf",
+	"f_czaskgfdbhrr_yqohnbbyyajghkeut.swf",
+	"yfsktnrbaildccbafgkfcjixvnndugfz.swf",
 	*/
 
 	//world maps
