@@ -21,6 +21,7 @@ var bgm = [
 	"bgm_p/121h.swf",
 	"bgm_p/122e.swf",
 	"bgm_p/123d.swf",
+	"bgm_p/125h.swf",
 	"bgm_p/205c.swf",
 	"bgm_p/206i.swf",
 	"bgm_p/209d.swf",
@@ -35,17 +36,6 @@ var bgm = [
 	"bgm_p/229b.swf",
 	
 	//Event BGM theme
-	"bgm_p/907c.swf",
-	"bgm_p/908i.swf",
-	"bgm_p/909q.swf",
-	"swf/sound_b_bgm_61.swf",
-	"swf/sound_b_bgm_62.swf",
-	"swf/sound_b_bgm_63.swf",
-	"swf/sound_b_bgm_64.swf",
-	"swf/sound_b_bgm_67.swf",
-	"swf/sound_b_bgm_68.swf",
-	"swf/sound_b_bgm_70.swf",
-	"swf/sound_b_bgm_71.swf",
 	
 	//Battle BGM theme
 	"swf/sound_b_bgm_1.swf?version=2.0.6",
@@ -71,7 +61,8 @@ var bgm = [
 	"swf/sound_b_bgm_40.swf",
 	"swf/sound_b_bgm_44.swf",
 	"swf/sound_b_bgm_46.swf",
-	"swf/sound_b_bgm_47.swf"
+	"swf/sound_b_bgm_47.swf",
+	"swf/sound_b_bgm_75.swf"
 ];
 
 	//List of deprecated BGMs (no longer used)
@@ -81,6 +72,9 @@ var bgm = [
 	"bgm_p/904w.swf",
 	"bgm_p/905w.swf",
 	"bgm_p/906y.swf",
+	"bgm_p/907c.swf",
+	"bgm_p/908i.swf",
+	"bgm_p/909q.swf",
 	"swf/sound_b_bgm_51.swf",
 	"swf/sound_b_bgm_52.swf",
 	"swf/sound_b_bgm_53.swf",
@@ -91,4 +85,12 @@ var bgm = [
 	"swf/sound_b_bgm_58.swf",
 	"swf/sound_b_bgm_59.swf",
 	"swf/sound_b_bgm_60.swf",
+	"swf/sound_b_bgm_61.swf",
+	"swf/sound_b_bgm_62.swf",
+	"swf/sound_b_bgm_63.swf",
+	"swf/sound_b_bgm_64.swf",
+	"swf/sound_b_bgm_67.swf",
+	"swf/sound_b_bgm_68.swf",
+	"swf/sound_b_bgm_70.swf",
+	"swf/sound_b_bgm_71.swf",
 	*/
