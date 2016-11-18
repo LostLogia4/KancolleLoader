@@ -65,7 +65,9 @@ var bgm = [
 	"swf/sound_b_bgm_47.swf",
 	"swf/sound_b_bgm_75.swf",
 	"swf/sound_b_bgm_76.swf",
-	"swf/sound_b_bgm_77.swf"
+	"swf/sound_b_bgm_77.swf",
+	"swf/sound_b_bgm_80.swf",
+	"swf/sound_b_bgm_81.swf"
 ];
 
 	//List of deprecated BGMs (no longer used)
