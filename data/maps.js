@@ -3,6 +3,8 @@ var worldmaps = [
 	//eventmaps
 	
 	//pasteventmaps
+	"nvnnohkjynpwjjiffkpioblpiqjxscjl.swf",
+	
 	/*
 	"lddsvnlihrvtnpjkwqcelxpsmylpcqcyifty.swf",
 	"gtghlytvrrnwwlgclowhlxxdowjcyhsslylg.swf",
