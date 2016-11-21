@@ -1,11 +1,12 @@
 var worldmaps = [
 	
 	//eventmaps
+	"nvnnohkjynpwjjiffkpioblpiqjxscjl.swf",
+	"wfibpsbhyiqkogxxysvcullieqcsgeyr.swf",
+	"xsxmiucgoihmyrvmiwcvkmjguonfhpgs.swf",
 	
 	//pasteventmaps
-	"nvnnohkjynpwjjiffkpioblpiqjxscjl.swf",
-	
-	/*
+	/* Spring 2016
 	"lddsvnlihrvtnpjkwqcelxpsmylpcqcyifty.swf",
 	"gtghlytvrrnwwlgclowhlxxdowjcyhsslylg.swf",
 	"ykiginprdwshxaxvsfqfsglcgqbmuwsesjsj.swf",
@@ -13,6 +14,8 @@ var worldmaps = [
 	"ttiowoxbvxkzupqukiogqbferupdilhnbuss.swf",
 	"ffeslxuunebocfbhyurhqvkuadvbdpchpuun.swf",
 	"ajbgoywibmolclvnnmqkgmpcymosnellkojv.swf",
+	*/
+	/* Summer 2016
 	"zagktsaidxm_aakcgeuydhg_zhebudgs.swf",
 	"dtsudwjbtccfcvpqsjqrxncytfpuxdcx.swf",
 	"f_czaskgfdbhrr_yqohnbbyyajghkeut.swf",
