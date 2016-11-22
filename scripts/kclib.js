@@ -1,6 +1,7 @@
 //Global variables for shortening link names in Javascript.
 var objlink = "<object style=\"visibility:hidden;\" data=\"http://"
 var imglink = "<img style=\"visibility:hidden;\" src=\"http://"
+var audlink = "<audio><source src=\"http://"
 //Optimization of embeds div query
 var $embed = $("#embeds");
 
@@ -9,21 +10,21 @@ function loadinterface() {
 	uilinkage = defineInterface();
 	
 	$.each(uilinkage, function(index, DynamicAsset){
-		$embed.append(objlink+ServerIP+DynamicAsset+"\">/");
+		$embed.append(objlink+ServerIP+DynamicAsset+"\"/>");
 	});
 }
 
 //load static info from bgm.js
 function loadbgm() {
 	$.each(bgm, function(index, StaticAsset){
-		$embed.append(objlink+ServerIP+"/kcs/resources/"+StaticAsset+"\">/");
+		$embed.append(objlink+ServerIP+"/kcs/resources/"+StaticAsset+"\"/>");
 	});
 }
 
 //load static info from maps.js
 function loadmap() {
 	$.each(worldmaps, function(index, StaticAsset){
-		$embed.append(objlink+ServerIP+"/kcs/resources/swf/map/"+StaticAsset+"\">/");
+		$embed.append(objlink+ServerIP+"/kcs/resources/swf/map/"+StaticAsset+"\"/>");
 	});
 }
 
@@ -136,7 +137,7 @@ function loadshipcg() {
 			var shipcglnk = objlink+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf";
 			if (ShipGraph.api_version[0] > 1) shipcglnk += "?VERSION="+ShipGraph.api_version[0];
 			
-			$embed.append(shipcglnk+"\">/");
+			$embed.append(shipcglnk+"\"/>");
 			}
 	});
 }
