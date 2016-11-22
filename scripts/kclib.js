@@ -1,5 +1,6 @@
 //Global variables for shortening link names in Javascript.
-var imglink = "<img width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"
+var objlink = "<object style=\"visibility:hidden;\" data=\"http://"
+var imglink = "<img style=\"visibility:hidden;\" src=\"http://"
 //Optimization of embeds div query
 var $embed = $("#embeds");
 
@@ -8,21 +9,21 @@ function loadinterface() {
 	uilinkage = defineInterface();
 	
 	$.each(uilinkage, function(index, DynamicAsset){
-		$embed.append(imglink+ServerIP+DynamicAsset+"\">");
+		$embed.append(objlink+ServerIP+DynamicAsset+"\">/");
 	});
 }
 
 //load static info from bgm.js
 function loadbgm() {
 	$.each(bgm, function(index, StaticAsset){
-		$embed.append(imglink+ServerIP+"/kcs/resources/"+StaticAsset+"\">");
+		$embed.append(objlink+ServerIP+"/kcs/resources/"+StaticAsset+"\">/");
 	});
 }
 
 //load static info from maps.js
 function loadmap() {
 	$.each(worldmaps, function(index, StaticAsset){
-		$embed.append(imglink+ServerIP+"/kcs/resources/swf/map/"+StaticAsset+"\">");
+		$embed.append(objlink+ServerIP+"/kcs/resources/swf/map/"+StaticAsset+"\">/");
 	});
 }
 
@@ -132,10 +133,10 @@ function loadshipcg() {
 		if (( (ShipGraph.api_sortno != 0) || (ShipGraph.api_id > 500) ) && !(blacklistID.indexOf(ShipGraph.api_id) >= 0)) {
 			
 			//declare shipcg link as partial code, inject version params if higher than 1.
-			var shipcglnk = imglink+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf";
+			var shipcglnk = objlink+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf";
 			if (ShipGraph.api_version[0] > 1) shipcglnk += "?VERSION="+ShipGraph.api_version[0];
 			
-			$embed.append(shipcglnk+"\">");
+			$embed.append(shipcglnk+"\">/");
 			}
 	});
 }
