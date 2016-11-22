@@ -1,3 +1,7 @@
+object {
+	 visibility:hidden;
+}
+
 #progress {
 	width:300px;
 	height:85px;
