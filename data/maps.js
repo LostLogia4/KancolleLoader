@@ -5,6 +5,7 @@ var worldmaps = [
 	"wfibpsbhyiqkogxxysvcullieqcsgeyr.swf",
 	"xsxmiucgoihmyrvmiwcvkmjguonfhpgs.swf",
 	"icayslygwoflmjtfwjjdqefjczrrpcde.swf",
+	"ufdqcqmyqovksjkggcuviyyolpqgvsfb.swf",
 	
 	//pasteventmaps
 	/* Spring 2016
