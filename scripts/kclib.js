@@ -2,6 +2,8 @@
 var objlink = "<object data=\"http://"
 var imglink = "<img style=\"visibility:hidden;\" src=\"http://"
 var audlink = "<audio><source src=\"http://"
+var audfix = "\"></audio>"
+var objfix = "\"></object>"
 //Optimization of embeds div query
 var $embed = $("#embeds");
 
@@ -10,21 +12,21 @@ function loadinterface() {
 	uilinkage = defineInterface();
 	
 	$.each(uilinkage, function(index, DynamicAsset){
-		$embed.append(objlink+ServerIP+DynamicAsset+"\"/>");
+		$embed.append(objlink+ServerIP+DynamicAsset+objfix);
 	});
 }
 
 //load static info from bgm.js
 function loadbgm() {
 	$.each(bgm, function(index, StaticAsset){
-		$embed.append(objlink+ServerIP+"/kcs/resources/"+StaticAsset+"\"/>");
+		$embed.append(objlink+ServerIP+"/kcs/resources/"+StaticAsset+objfix);
 	});
 }
 
 //load static info from maps.js
 function loadmap() {
 	$.each(worldmaps, function(index, StaticAsset){
-		$embed.append(objlink+ServerIP+"/kcs/resources/swf/map/"+StaticAsset+"\"/>");
+		$embed.append(objlink+ServerIP+"/kcs/resources/swf/map/"+StaticAsset+objfix);
 	});
 }
 
@@ -33,6 +35,7 @@ function loadfurnish() {
 	
 	//Commonly used link
 	var FurnitureLink = imglink+ServerIP+"/kcs/resources/image/furniture/";
+	var AniFurnitureLink = objlink+ServerIP+"/kcs/resources/image/furniture/";
 	
 	//Append static assets
 	$.each(furniture, function(index, StaticAsset){
@@ -52,7 +55,7 @@ function loadfurnish() {
 			case 5: FurnitureType =   "desk/"; break;
 		}
 		
-		$embed.append(FurnitureLink+FurnitureType+DynamicAsset.api_filename+".swf?VERSION="+DynamicAsset.api_version+"\">");
+		$embed.append(AniFurnitureLink+FurnitureType+DynamicAsset.api_filename+".swf?VERSION="+DynamicAsset.api_version+"\">");
 	});
 }
 
