@@ -2,7 +2,7 @@
 var objlink = "<object data=\"http://"
 var imglink = "<img style=\"visibility:hidden;\" src=\"http://"
 var audlink = "<audio><source src=\"http://"
-var audfix = "\"></audio>"
+var audfix = ".mp3\"></audio>"
 var objfix = "\"></object>"
 //Optimization of embeds div query
 var $embed = $("#embeds");
@@ -55,7 +55,7 @@ function loadfurnish() {
 			case 5: FurnitureType =   "desk/"; break;
 		}
 		
-		$embed.append(AniFurnitureLink+FurnitureType+DynamicAsset.api_filename+".swf?VERSION="+DynamicAsset.api_version+"\">");
+		$embed.append(AniFurnitureLink+FurnitureType+DynamicAsset.api_filename+".swf?VERSION="+DynamicAsset.api_version+objfix);
 	});
 }
 
@@ -140,7 +140,7 @@ function loadshipcg() {
 			var shipcglnk = objlink+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf";
 			if (ShipGraph.api_version[0] > 1) shipcglnk += "?VERSION="+ShipGraph.api_version[0];
 			
-			$embed.append(shipcglnk+"\"/>");
+			$embed.append(shipcglnk+objfix);
 			}
 	});
 }
