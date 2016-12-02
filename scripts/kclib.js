@@ -83,7 +83,6 @@ function loadequip() {
 			
 	for (EquipIDNum = 1; EquipIDNum < EquipIndex[0]; EquipIDNum++) {
 	
-
 		//Image prefetch embed function call (with damecon exception)
 		loadequiplink(EquipIDNum);
 	}
@@ -101,18 +100,18 @@ function loadtitlecall() {
 	
 		//mp3 prefetch embeds
 		//For in-game voices that doesn't need padding
-		if (CallIDNum <  3) $embed.append(imglink+ServerIP+"/kcs/sound/kc9999/"+CallIDNum+".mp3\">");
-		if (CallIDNum <  8) $embed.append(imglink+ServerIP+"/kcs/sound/kc9999/1"+CallIDNum+".mp3\">");
+		if (CallIDNum <  3) $embed.append(audlink+ServerIP+"/kcs/sound/kc9999/"+CallIDNum+audfix);
+		if (CallIDNum <  8) $embed.append(audlink+ServerIP+"/kcs/sound/kc9999/1"+CallIDNum+audfix);
 		
 		//Zero paddings
 		if (CallIDNum <  10) CallIDNum = "0" + CallIDNum;
 		
 		//Intentionally wrapped in img for silence.
-		if (CallIDNum <= 20) $embed.append(imglink+ServerIP+"/kcs/sound/titlecall/a/"+CallIDNum+".mp3\">");
-		if (CallIDNum <= 13) $embed.append(imglink+ServerIP+"/kcs/sound/titlecall/b/"+CallIDNum+".mp3\">");
-		if (CallIDNum <= 11) $embed.append(imglink+ServerIP+"/kcs/sound/titlecall/c/"+CallIDNum+".mp3\">");
-		if (CallIDNum <= 18) $embed.append(imglink+ServerIP+"/kcs/sound/kc9999/3"+CallIDNum+".mp3\">");
-		$embed.append(imglink+ServerIP+"/kcs/sound/kc9999/4"+CallIDNum+".mp3\">");
+		if (CallIDNum <= 20) $embed.append(audlink+ServerIP+"/kcs/sound/titlecall/a/"+CallIDNum+audfix);
+		if (CallIDNum <= 13) $embed.append(audlink+ServerIP+"/kcs/sound/titlecall/b/"+CallIDNum+audfix);
+		if (CallIDNum <= 11) $embed.append(audlink+ServerIP+"/kcs/sound/titlecall/c/"+CallIDNum+audfix);
+		if (CallIDNum <= 18) $embed.append(audlink+ServerIP+"/kcs/sound/kc9999/3"+CallIDNum+audfix);
+		$embed.append(audlink+ServerIP+"/kcs/sound/kc9999/4"+CallIDNum+audfix);
 	}
 }
 
