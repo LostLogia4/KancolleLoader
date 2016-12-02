@@ -1,6 +1,7 @@
 //Global variables for shortening link names in Javascript.
 var objlink = "<object data=\"http://"
-var imglink = "<img style=\"visibility:hidden;\" src=\"http://"
+var imgstyle = "style=\"visibility:hidden;width:0px;height:0px;\""
+var imglink = "<img "+imgstyle+" src=\"http://"
 var objfix = "\"></object>"
 var audfix = ".mp3" + objfix;
 //Optimization of embeds div query
