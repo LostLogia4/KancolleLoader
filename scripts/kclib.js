@@ -1,9 +1,8 @@
 //Global variables for shortening link names in Javascript.
 var objlink = "<object data=\"http://"
 var imglink = "<img style=\"visibility:hidden;\" src=\"http://"
-var audlink = "<audio><source src=\"http://"
-var audfix = ".mp3\"></audio>"
 var objfix = "\"></object>"
+var audfix = ".mp3" + objfix;
 //Optimization of embeds div query
 var $embed = $("#embeds");
 
@@ -100,18 +99,18 @@ function loadtitlecall() {
 	
 		//mp3 prefetch embeds
 		//For in-game voices that doesn't need padding
-		if (CallIDNum <  3) $embed.append(audlink+ServerIP+"/kcs/sound/kc9999/"+CallIDNum+audfix);
-		if (CallIDNum <  8) $embed.append(audlink+ServerIP+"/kcs/sound/kc9999/1"+CallIDNum+audfix);
+		if (CallIDNum <  3) $embed.append(objlink+ServerIP+"/kcs/sound/kc9999/"+CallIDNum+audfix);
+		if (CallIDNum <  8) $embed.append(objlink+ServerIP+"/kcs/sound/kc9999/1"+CallIDNum+audfix);
 		
 		//Zero paddings
 		if (CallIDNum <  10) CallIDNum = "0" + CallIDNum;
 		
 		//Intentionally wrapped in img for silence.
-		if (CallIDNum <= 20) $embed.append(audlink+ServerIP+"/kcs/sound/titlecall/a/"+CallIDNum+audfix);
-		if (CallIDNum <= 13) $embed.append(audlink+ServerIP+"/kcs/sound/titlecall/b/"+CallIDNum+audfix);
-		if (CallIDNum <= 11) $embed.append(audlink+ServerIP+"/kcs/sound/titlecall/c/"+CallIDNum+audfix);
-		if (CallIDNum <= 18) $embed.append(audlink+ServerIP+"/kcs/sound/kc9999/3"+CallIDNum+audfix);
-		$embed.append(audlink+ServerIP+"/kcs/sound/kc9999/4"+CallIDNum+audfix);
+		if (CallIDNum <= 20) $embed.append(objlink+ServerIP+"/kcs/sound/titlecall/a/"+CallIDNum+audfix);
+		if (CallIDNum <= 13) $embed.append(objlink+ServerIP+"/kcs/sound/titlecall/b/"+CallIDNum+audfix);
+		if (CallIDNum <= 11) $embed.append(objlink+ServerIP+"/kcs/sound/titlecall/c/"+CallIDNum+audfix);
+		if (CallIDNum <= 18) $embed.append(objlink+ServerIP+"/kcs/sound/kc9999/3"+CallIDNum+audfix);
+		$embed.append(objlink+ServerIP+"/kcs/sound/kc9999/4"+CallIDNum+audfix);
 	}
 }
 
