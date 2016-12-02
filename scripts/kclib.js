@@ -1,5 +1,9 @@
 //Global variables for shortening link names in Javascript.
-var imglink = "<img width=\"0%\" height=\"0%\" style=\"visibility:hidden;\" src=\"http://"
+var objlink = "<object data=\"http://"
+var imgstyle = "style=\"visibility:hidden;width:0px;height:0px;\""
+var imglink = "<img "+imgstyle+" src=\"http://"
+var objfix = "\"></object>"
+var audfix = ".mp3" + objfix;
 //Optimization of embeds div query
 var $embed = $("#embeds");
 
@@ -8,21 +12,21 @@ function loadinterface() {
 	uilinkage = defineInterface();
 	
 	$.each(uilinkage, function(index, DynamicAsset){
-		$embed.append(imglink+ServerIP+DynamicAsset+"\">");
+		$embed.append(objlink+ServerIP+DynamicAsset+objfix);
 	});
 }
 
 //load static info from bgm.js
 function loadbgm() {
 	$.each(bgm, function(index, StaticAsset){
-		$embed.append(imglink+ServerIP+"/kcs/resources/"+StaticAsset+"\">");
+		$embed.append(objlink+ServerIP+"/kcs/resources/"+StaticAsset+objfix);
 	});
 }
 
 //load static info from maps.js
 function loadmap() {
 	$.each(worldmaps, function(index, StaticAsset){
-		$embed.append(imglink+ServerIP+"/kcs/resources/swf/map/"+StaticAsset+"\">");
+		$embed.append(objlink+ServerIP+"/kcs/resources/swf/map/"+StaticAsset+objfix);
 	});
 }
 
@@ -31,6 +35,7 @@ function loadfurnish() {
 	
 	//Commonly used link
 	var FurnitureLink = imglink+ServerIP+"/kcs/resources/image/furniture/";
+	var AniFurnitureLink = objlink+ServerIP+"/kcs/resources/image/furniture/";
 	
 	//Append static assets
 	$.each(furniture, function(index, StaticAsset){
@@ -50,7 +55,7 @@ function loadfurnish() {
 			case 5: FurnitureType =   "desk/"; break;
 		}
 		
-		$embed.append(FurnitureLink+FurnitureType+DynamicAsset.api_filename+".swf?VERSION="+DynamicAsset.api_version+"\">");
+		$embed.append(AniFurnitureLink+FurnitureType+DynamicAsset.api_filename+".swf?VERSION="+DynamicAsset.api_version+objfix);
 	});
 }
 
@@ -78,7 +83,6 @@ function loadequip() {
 			
 	for (EquipIDNum = 1; EquipIDNum < EquipIndex[0]; EquipIDNum++) {
 	
-
 		//Image prefetch embed function call (with damecon exception)
 		loadequiplink(EquipIDNum);
 	}
@@ -96,18 +100,18 @@ function loadtitlecall() {
 	
 		//mp3 prefetch embeds
 		//For in-game voices that doesn't need padding
-		if (CallIDNum <  3) $embed.append(imglink+ServerIP+"/kcs/sound/kc9999/"+CallIDNum+".mp3\">");
-		if (CallIDNum <  8) $embed.append(imglink+ServerIP+"/kcs/sound/kc9999/1"+CallIDNum+".mp3\">");
+		if (CallIDNum <  3) $embed.append(objlink+ServerIP+"/kcs/sound/kc9999/"+CallIDNum+audfix);
+		if (CallIDNum <  8) $embed.append(objlink+ServerIP+"/kcs/sound/kc9999/1"+CallIDNum+audfix);
 		
 		//Zero paddings
 		if (CallIDNum <  10) CallIDNum = "0" + CallIDNum;
 		
 		//Intentionally wrapped in img for silence.
-		if (CallIDNum <= 20) $embed.append(imglink+ServerIP+"/kcs/sound/titlecall/a/"+CallIDNum+".mp3\">");
-		if (CallIDNum <= 13) $embed.append(imglink+ServerIP+"/kcs/sound/titlecall/b/"+CallIDNum+".mp3\">");
-		if (CallIDNum <= 11) $embed.append(imglink+ServerIP+"/kcs/sound/titlecall/c/"+CallIDNum+".mp3\">");
-		if (CallIDNum <= 18) $embed.append(imglink+ServerIP+"/kcs/sound/kc9999/3"+CallIDNum+".mp3\">");
-		$embed.append(imglink+ServerIP+"/kcs/sound/kc9999/4"+CallIDNum+".mp3\">");
+		if (CallIDNum <= 20) $embed.append(objlink+ServerIP+"/kcs/sound/titlecall/a/"+CallIDNum+audfix);
+		if (CallIDNum <= 13) $embed.append(objlink+ServerIP+"/kcs/sound/titlecall/b/"+CallIDNum+audfix);
+		if (CallIDNum <= 11) $embed.append(objlink+ServerIP+"/kcs/sound/titlecall/c/"+CallIDNum+audfix);
+		if (CallIDNum <= 18) $embed.append(objlink+ServerIP+"/kcs/sound/kc9999/3"+CallIDNum+audfix);
+		$embed.append(objlink+ServerIP+"/kcs/sound/kc9999/4"+CallIDNum+audfix);
 	}
 }
 
@@ -132,10 +136,10 @@ function loadshipcg() {
 		if (( (ShipGraph.api_sortno != 0) || (ShipGraph.api_id > 500) ) && !(blacklistID.indexOf(ShipGraph.api_id) >= 0)) {
 			
 			//declare shipcg link as partial code, inject version params if higher than 1.
-			var shipcglnk = imglink+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf";
+			var shipcglnk = objlink+ServerIP+"/kcs/resources/swf/ships/"+ShipGraph.api_filename+".swf";
 			if (ShipGraph.api_version[0] > 1) shipcglnk += "?VERSION="+ShipGraph.api_version[0];
 			
-			$embed.append(shipcglnk+"\">");
+			$embed.append(shipcglnk+objfix);
 			}
 	});
 }
