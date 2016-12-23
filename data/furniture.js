@@ -152,11 +152,17 @@ var furnituregraph = [{
             "api_filename": "029",
             "api_version": "2"
         }, {
+            "api_id": 186,
+            "api_type": 5,
+            "api_no": 22,
+            "api_filename": "023",
+            "api_version": "2"
+        }, {
             "api_id": 199,
             "api_type": 5,
             "api_no": 35,
             "api_filename": "036",
-            "api_version": "1"
+            "api_version": "6"
         }, {
             "api_id": 206,
             "api_type": 3,
@@ -174,7 +180,7 @@ var furnituregraph = [{
             "api_type": 2,
             "api_no": 33,
             "api_filename": "034",
-            "api_version": "4"
+            "api_version": "5"
         }, {
             "api_id": 216,
             "api_type": 5,
@@ -204,7 +210,7 @@ var furnituregraph = [{
             "api_type": 2,
             "api_no": 35,
             "api_filename": "036",
-            "api_version": "16"
+            "api_version": "23"
         }, {
             "api_id": 235,
             "api_type": 3,
@@ -216,13 +222,13 @@ var furnituregraph = [{
             "api_type": 4,
             "api_no": 37,
             "api_filename": "038",
-            "api_version": "1"
+            "api_version": "2"
         }, {
             "api_id": 240,
             "api_type": 5,
             "api_no": 49,
             "api_filename": "050",
-            "api_version": "1"
+            "api_version": "6"
         }, {
             "api_id": 244,
             "api_type": 2,
@@ -318,5 +324,47 @@ var furnituregraph = [{
             "api_type": 0,
             "api_no": 41,
             "api_filename": "042",
+            "api_version": "1"
+        }, {
+            "api_id": 310,
+            "api_type": 0,
+            "api_no": 44,
+            "api_filename": "045",
+            "api_version": "1"
+        }, {
+            "api_id": 311,
+            "api_type": 2,
+            "api_no": 43,
+            "api_filename": "044",
+            "api_version": "1"
+        }, {
+            "api_id": 313,
+            "api_type": 2,
+            "api_no": 44,
+            "api_filename": "045",
+            "api_version": "2"
+        }, {
+            "api_id": 314,
+            "api_type": 3,
+            "api_no": 64,
+            "api_filename": "065",
+            "api_version": "2"
+        }, {
+            "api_id": 317,
+            "api_type": 5,
+            "api_no": 68,
+            "api_filename": "069",
+            "api_version": "1"
+        }, {
+            "api_id": 318,
+            "api_type": 2,
+            "api_no": 45,
+            "api_filename": "046",
+            "api_version": "1"
+        }, {
+            "api_id": 319,
+            "api_type": 2,
+            "api_no": 46,
+            "api_filename": "047",
             "api_version": "1"
         }];
