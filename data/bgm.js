@@ -23,6 +23,7 @@ var bgm = [
 	"bgm_p/123d.swf",
 	"bgm_p/125h.swf",
 	"bgm_p/127u.swf",
+	"bgm_p/128u.swf",
 	"bgm_p/205c.swf",
 	"bgm_p/206i.swf",
 	"bgm_p/209d.swf",
