@@ -81,6 +81,9 @@ var furniture = [
 		"object/056.png",
 		"object/057.png",
 		"object/058.png",
+		"object/066.png",
+		"object/066.png",
+		"object/067.png",
 		
 		"wall/001.png",
 		"wall/003.png",
