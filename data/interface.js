@@ -30,7 +30,7 @@ function defineInterface(){
 	var lm_supply = "2.8.6"
 	var lm_remodel = "3.0.0"
 	var lm_repair = "2.8.6"
-	var lm_arsenal = "3.0.0"
+	var lm_arsenal = "3.0.0.1"
 	var lm_sally = "2.9.7"
 	var mm_battle = "2.9.8"
 	var mm_battleresult = "2.9.7"
