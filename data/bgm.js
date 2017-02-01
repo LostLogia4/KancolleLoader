@@ -67,6 +67,8 @@ var bgm = [
 	"swf/sound_b_bgm_44.swf",
 	"swf/sound_b_bgm_46.swf",
 	"swf/sound_b_bgm_47.swf",
+	"swf/sound_b_bgm_68.swf",
+	"swf/sound_b_bgm_70.swf",
 	"swf/sound_b_bgm_75.swf",
 	"swf/sound_b_bgm_76.swf",
 	"swf/sound_b_bgm_77.swf",
