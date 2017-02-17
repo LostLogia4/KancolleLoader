@@ -1,11 +1,9 @@
 var worldmaps = [
 	
 	//eventmaps
-	"nvnnohkjynpwjjiffkpioblpiqjxscjl.swf",
-	"wfibpsbhyiqkogxxysvcullieqcsgeyr.swf",
-	"xsxmiucgoihmyrvmiwcvkmjguonfhpgs.swf",
-	"icayslygwoflmjtfwjjdqefjczrrpcde.swf",
-	"ufdqcqmyqovksjkggcuviyyolpqgvsfb.swf",
+	"ukmbihehnmexngupikxedxxpszanxrig.swf?version=3.1.0",
+	"pdwciendrzesxjhihrsnuwihcizusryc.swf?version=3.1.0",
+	"yejdgsmsesxrrbsndsaesmewrwkezfgk.swf?version=3.1.0",
 	
 	//pasteventmaps
 	/* Spring 2016
@@ -16,12 +14,17 @@ var worldmaps = [
 	"ttiowoxbvxkzupqukiogqbferupdilhnbuss.swf",
 	"ffeslxuunebocfbhyurhqvkuadvbdpchpuun.swf",
 	"ajbgoywibmolclvnnmqkgmpcymosnellkojv.swf",
-	*/
 	/* Summer 2016
 	"zagktsaidxm_aakcgeuydhg_zhebudgs.swf",
 	"dtsudwjbtccfcvpqsjqrxncytfpuxdcx.swf",
 	"f_czaskgfdbhrr_yqohnbbyyajghkeut.swf",
 	"yfsktnrbaildccbafgkfcjixvnndugfz.swf",
+	/* Fall 2016
+	"nvnnohkjynpwjjiffkpioblpiqjxscjl.swf",
+	"wfibpsbhyiqkogxxysvcullieqcsgeyr.swf",
+	"xsxmiucgoihmyrvmiwcvkmjguonfhpgs.swf",
+	"icayslygwoflmjtfwjjdqefjczrrpcde.swf",
+	"ufdqcqmyqovksjkggcuviyyolpqgvsfb.swf",
 	*/
 
 	//world maps
