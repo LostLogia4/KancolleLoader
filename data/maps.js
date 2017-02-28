@@ -1,9 +1,6 @@
 var worldmaps = [
 	
 	//eventmaps
-	"ukmbihehnmexngupikxedxxpszanxrig.swf?version=3.1.0",
-	"pdwciendrzesxjhihrsnuwihcizusryc.swf?version=3.1.0",
-	"yejdgsmsesxrrbsndsaesmewrwkezfgk.swf?version=3.1.0",
 	
 	//pasteventmaps
 	/* Spring 2016
@@ -25,6 +22,10 @@ var worldmaps = [
 	"xsxmiucgoihmyrvmiwcvkmjguonfhpgs.swf",
 	"icayslygwoflmjtfwjjdqefjczrrpcde.swf",
 	"ufdqcqmyqovksjkggcuviyyolpqgvsfb.swf",
+	/* Winter 2017
+	"ukmbihehnmexngupikxedxxpszanxrig.swf?version=3.1.0",
+	"pdwciendrzesxjhihrsnuwihcizusryc.swf?version=3.1.0",
+	"yejdgsmsesxrrbsndsaesmewrwkezfgk.swf?version=3.1.0",
 	*/
 
 	//world maps
