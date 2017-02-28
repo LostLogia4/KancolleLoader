@@ -10,10 +10,10 @@ function defineInterface(){
 	*/
 
 	//local variable for ui link (as string)
-	var mm_core = "nkxhelerqbjl"
+	var mm_core = "oriusynouqpu"
 	var mm_title = "2.7.3"
 	var mm_tutorial = "2.8.8"
-	var mm_common = "3.1.0"
+	var mm_common = "3.1.1"
 	var mm_port = "2.9.8"
 	var rm_font = "2.9.7"
 	var rm_icon = "3.1.0"
@@ -25,15 +25,15 @@ function defineInterface(){
 	var um_album = "3.1.0"
 	var um_itemlist = "3.0.0"
 	var um_interior = "2.3"
-	var um_duty = "3.1.0"
+	var um_duty = "3.1.1"
 	var lm_organize = "3.1.0"
 	var lm_supply = "2.8.6"
-	var lm_remodel = "3.1.0"
+	var lm_remodel = "3.1.1"
 	var lm_repair = "2.8.6"
 	var lm_arsenal = "3.0.0.2"
-	var lm_sally = "3.1.0"
-	var mm_battle = "3.1.0"
-	var mm_battleresult = "3.1.0"
+	var lm_sally = "3.1.1"
+	var mm_battle = "3.1.1"
+	var mm_battleresult = "3.1.1"
 	var xm_wedding = "2.0.10"
 	var xm_revamp = "2.9.8.6"
 	
