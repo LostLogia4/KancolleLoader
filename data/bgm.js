@@ -38,6 +38,7 @@ var bgm = [
 	"bgm_p/228c.swf",
 	"bgm_p/229b.swf",
 	"bgm_p/233r.swf",
+	"bgm_p/236g.swf",
 	
 	//Event BGM theme
 	"bgm_p/912i.swf",
