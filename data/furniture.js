@@ -159,13 +159,13 @@ var furnituregraph = [{
             "api_type": 5,
             "api_no": 22,
             "api_filename": "023",
-            "api_version": "2"
+            "api_version": "3"
         }, {
             "api_id": 199,
             "api_type": 5,
             "api_no": 35,
             "api_filename": "036",
-            "api_version": "6"
+            "api_version": "7"
         }, {
             "api_id": 206,
             "api_type": 3,
@@ -213,7 +213,7 @@ var furnituregraph = [{
             "api_type": 2,
             "api_no": 35,
             "api_filename": "036",
-            "api_version": "27"
+            "api_version": "30"
         }, {
             "api_id": 235,
             "api_type": 3,
@@ -231,7 +231,7 @@ var furnituregraph = [{
             "api_type": 5,
             "api_no": 49,
             "api_filename": "050",
-            "api_version": "6"
+            "api_version": "7"
         }, {
             "api_id": 244,
             "api_type": 2,
@@ -375,5 +375,59 @@ var furnituregraph = [{
             "api_type": 5,
             "api_no": 72,
             "api_filename": "073",
+            "api_version": "1"
+        }, {
+            "api_id": 333,
+            "api_type": 2,
+            "api_no": 47,
+            "api_filename": "048",
+            "api_version": "1"
+        }, {
+            "api_id": 334,
+            "api_type": 4,
+            "api_no": 47,
+            "api_filename": "048",
+            "api_version": "1"
+        }, {
+            "api_id": 336,
+            "api_type": 2,
+            "api_no": 48,
+            "api_filename": "049",
+            "api_version": "1"
+        }, {
+            "api_id": 342,
+            "api_type": 3,
+            "api_no": 70,
+            "api_filename": "071",
+            "api_version": "3"
+        }, {
+            "api_id": 343,
+            "api_type": 3,
+            "api_no": 71,
+            "api_filename": "072",
+            "api_version": "1"
+        }, {
+            "api_id": 346,
+            "api_type": 2,
+            "api_no": 50,
+            "api_filename": "051",
+            "api_version": "1"
+        }, {
+            "api_id": 347,
+            "api_type": 3,
+            "api_no": 72,
+            "api_filename": "073",
+            "api_version": "1"
+        }, {
+            "api_id": 348,
+            "api_type": 4,
+            "api_no": 48,
+            "api_filename": "049",
+            "api_version": "2"
+        }, {
+            "api_id": 349,
+            "api_type": 3,
+            "api_no": 73,
+            "api_filename": "074",
             "api_version": "1"
         }];
