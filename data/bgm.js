@@ -59,7 +59,6 @@ var bgm = [
 	"swf/sound_b_bgm_11.swf?version=2.0.6",
 	"swf/sound_b_bgm_12.swf?version=2.0.12",
 	"swf/sound_b_bgm_13.swf?version=2.0.19",
-	"swf/sound_b_bgm_18.swf?version=2.1.7",
 	"swf/sound_b_bgm_19.swf?version=2.1.7",
 	"swf/sound_b_bgm_20.swf?version=2.1.9",
 	"swf/sound_b_bgm_23.swf?version=2.2",
