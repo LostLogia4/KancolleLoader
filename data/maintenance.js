@@ -1,5 +1,5 @@
 //value for next Maintenance Date
-var expiryDate = "31 July 2017 11:00 GMT+0900";
+var expiryDate = "7 August 2017 11:00 GMT+0900";
 
 //list of blacklisted api_shipgraph IDs which contains 404 links.
 //api_id values are integers, hence no quotes.
