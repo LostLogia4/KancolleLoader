@@ -70,6 +70,7 @@ var bgm = [
 	"swf/sound_b_bgm_38.swf",
 	"swf/sound_b_bgm_39.swf",
 	"swf/sound_b_bgm_40.swf",
+	"swf/sound_b_bgm_41.swf",
 	"swf/sound_b_bgm_44.swf",
 	"swf/sound_b_bgm_46.swf",
 	"swf/sound_b_bgm_47.swf",
@@ -80,7 +81,8 @@ var bgm = [
 	"swf/sound_b_bgm_77.swf",
 	"swf/sound_b_bgm_80.swf",
 	"swf/sound_b_bgm_81.swf",
-	"swf/sound_b_bgm_83.swf"
+	"swf/sound_b_bgm_83.swf",
+	"swf/sound_b_bgm_94.swf"
 ];
 
 	//List of deprecated BGMs (no longer used)
