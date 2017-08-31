@@ -1,5 +1,5 @@
 //Global variables for shortening link names in Javascript.
-var objlink = "<object data=\"http://"
+var objlink = "<object "+imgstyle+" data=\"http://"
 var imgstyle = "style=\"visibility:hidden;width:0px;height:0px;\""
 var imglink = "<img "+imgstyle+" src=\"http://"
 var objfix = "\"></object>"
