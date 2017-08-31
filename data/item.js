@@ -1,5 +1,5 @@
 //edit here when new equipment are introduced
-var EquipIndex = [200,204,205,207,208,209,210,211,212];
+var EquipIndex = [200,203,204,205,206,207,208,209,210,211,212];
 //First entry is a delimitor for initial batch, subsequent entries are for gapped entries
 
 var UseItem = [ "004", "052", "054", "055", "056", "057", "058", "059", "060", "061", "062", "063", "064", "065", "066", "067", "068", "069", "070", "071", "072", "073", "074" ];
