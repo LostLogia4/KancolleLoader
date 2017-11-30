@@ -1,5 +1,3 @@
-
-
 var shipgraph = [{
 			"api_id": 1,
 			"api_sortno": 31,
